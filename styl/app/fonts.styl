@@ -1,0 +1,68 @@
+
+p, .font-style 
+	letter-spacing remify($letterSpacing)
+	margin-bottom remify(20px)
+	font-size: 22px
+	line-height: $lineHeight
+	font-size: $font-size['medium']
+
+#acoes
+	ul
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li
+			@extends .font-style
+			margin-bottom: 0
+			padding-left: 4em;
+			text-indent: -1.0em;
+			&::before
+				content: "• ";
+				font-size: 28px
+				color: $colors['verde-bm']
+
+
+@media screen and (max-width: $queries['medium'])
+	#acoes
+		ul
+			li
+				padding-left: 1em
+
+
+create-hs()
+	for hs, value in $hs-sizes
+		{hs}
+			font-size remify(value)
+		@media screen and (max-width: $queries['medium'])
+			{hs}
+				font-size remify(value) * $font-medium
+				text-align $font-medium-align
+		@media screen and (max-width: $queries['small'])
+			{hs}
+				font-size remify(value) * $font-xs
+				text-align $font-xs-align
+				
+// /cria tamanhos diferentes para as fontes
+fonts-size( )
+	for fonts, value in $font-size
+		.font-{fonts}
+			@extend .font-style
+			font-size value
+
+.uppercase
+	text-transform: uppercase
+
+.light
+	font-weight: 100
+.bold
+	font-weight: bold
+
+.capitular:first-letter
+	font-size: 30px
+	float: left
+	margin-right: 5px
+	font-weight: bold
+
+
+create-hs()
+fonts-size()

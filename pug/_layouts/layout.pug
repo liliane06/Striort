@@ -1,0 +1,15 @@
+block variaveis
+    -var nome = "Fututa Tintas"
+    -var titulo = "isaias"
+
+html(pt='pt-br')
+    head
+        meta(http-equiv="X-UA-Compatible", content="IE=7")
+        block nome
+                
+    body#pug.principal
+        header
+            h1.title #{titulo}
+        footer
+            block rodape
+                p rodape

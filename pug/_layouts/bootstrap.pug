@@ -1,0 +1,18 @@
+block settings
+    - var title = 'Bootstrap Guide'
+doctype
+html(lang="pt")
+    head
+        include ../_partials/meta-tags
+        <link rel="apple-touch-icon" href="icon.png"> 
+        title #{title}
+        block CSS
+            link(rel="stylesheet", href="css/plugins.css") 
+    body
+        block content
+
+        block scriptsJS
+            script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+            script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+
+            

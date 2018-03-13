@@ -1,0 +1,53 @@
+header
+	height: auto
+	background-image: url(../img/back-topo.jpg)
+	background-repeat: repeat-x
+	padding-top 30px
+	.container
+		padding-bottom: 30px
+	.rede-sociais
+		text-align: left
+	
+.logo-leort
+	text-align: left 
+
+.logo-container
+	padding: 15px 0
+
+
+footer
+	@extend .text-inverse
+	p 
+		@extend .light
+
+
+.rede-sociais-face
+	padding-right: 10px
+
+@media screen and (max-width: $queries['medium'])
+	header
+		height: auto
+		background-image: url(../img/back-topo.jpg)
+		background-repeat: repeat-x
+		padding-top 15px
+		.container
+			padding-bottom: 15px
+		.rede-sociais
+			text-align: right
+
+	.logo-leort
+		text-align: center
+
+	.rede-sociais-face
+		padding-right: 4px
+
+@media screen and (max-width: $queries['small'])
+
+	.rede-sociais-insta
+	.rede-sociais-face
+		margin: auto
+		max-width 30px
+		display block
+	.rede-sociais-face
+		margin-top: -10px
+	

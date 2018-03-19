@@ -33,16 +33,7 @@
     }
 
 
-    //slick
-    $('#c-banner').slick({
-        dots: false,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        nextArrow: '<img src="img/seta-cat-right.png" class="seta-right" />"',
-		prevArrow: '<img src="img/seta-cat-left.png" class="seta-left" />"',
-      });
+
       
 
 

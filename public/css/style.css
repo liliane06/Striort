@@ -273,6 +273,9 @@ h6 {
 .bg-light-gray {
   background-color: #f3f3eb;
 }
+.bg-verde-agua {
+  background-color: #6fb8a7;
+}
 .text-black {
   color: #333;
 }
@@ -297,6 +300,9 @@ footer {
 }
 .text-light-gray {
   color: #f3f3eb;
+}
+.text-verde-agua {
+  color: #6fb8a7;
 }
 body {
   font: 100%;
@@ -1038,7 +1044,6 @@ header .rede-sociais {
   background-position: center center;
 }
 #c-banner {
-  padding-top: 80px;
   z-index: 999;
   position: relative;
 }
@@ -1082,14 +1087,14 @@ header .rede-sociais {
 .seta-right {
   right: -70px;
 }
-.line-gold {
+.line-blue {
   width: 100%;
   height: 1px;
-  background-image: url("../img/linha-dourada.png");
+  background-image: url("../img/linha-striort.png");
 }
 .line-small,
 .line-h3 {
-  background-image: url("../img/linha-dourada.png");
+  background-image: url("../img/linha-striort.png");
   background-position: center center;
   background-size: contain;
   height: 2px;
@@ -1102,14 +1107,14 @@ header .rede-sociais {
   max-width: 150px;
   margin: auto;
   height: 2px;
-  background-image: url("../img/linha-dourada.png");
+  background-image: url("../img/linha-striort.png");
   background-position: center center;
   background-size: contain;
 }
 .line-width-big {
   width: 400px;
   height: 2px;
-  background-image: url("../img/linha-dourada.png");
+  background-image: url("../img/linha-striort.png");
 }
 .arrowsPlace {
   width: 120px;
@@ -1173,6 +1178,37 @@ header .rede-sociais {
   z-index: 9;
   position: relative;
   margin-top: -40px;
+}
+.background-topo {
+  background-image: url("../img/striort-background-topo.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 990px;
+}
+.centralizar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.centralizar > * {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.centralizar .centralizar-interno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.centralizar .centralizar-interno > * {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .texto-banner-1 {
   font-size: 30px;
@@ -1455,7 +1491,7 @@ footer .logo-footer {
   transition: 0.3s;
 }
 .display-menu li a:hover {
-  color: ;
+  color: #6fb8a7;
   font-weight: bold;
 }
 .display-menu li a.ativo {

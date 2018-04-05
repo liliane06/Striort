@@ -168,10 +168,47 @@
         justify-content: space-around
         & > *
             align-self: center
+.centralizar2
+    display: flex
+    justify-content: center
+    & > *
+        align-self: center
+    .centralizar-interno2
+        display: flex
+        flex-direction: column
+        & > *
+            align-self: center
 
 .texto-banner-1
     font-size: 30px
     line-height: 1.2
+
+.sem-padding
+    padding: 0
+
+.linha-meio
+    font-weight: 100
+
+.bloco-melhoria
+    background-color: #3a4f46
+    color: #80bfaa
+    height:500px
+    text-align: center
+
+.possition-pai
+    position: relative
+
+.img-linha-verde-agua
+    position: absolute
+    left: 50px
+    top: 50px
+
+.position-texto
+    position: relative
+    top: 75px
+    left: 100px
+
+
 @media screen and (max-width: $queries['large'])
     .leort-image-text
         padding-top 20px

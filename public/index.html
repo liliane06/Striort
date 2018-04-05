@@ -38,10 +38,10 @@
       <div class="fechar-menu"><img src="img/fechar.png" alt="Botão Fechar"></div>
     </div>
     <!-- Header navegação-->
-    <header id="topo">
+    <header class="cor-menu" id="topo">
       <div class="container">
         <div class="row">
-          <div class="logo-leort col-xs-6 col-xs-push-3 col-md-2 col-md-push-0"><a href="https://www.bothanicamineral.com.br/" target="_blank"><img src="img/logo-topo.png" alt="Logo Bothanica Mineral"></a></div>
+          <div class="logo-leort col-xs-6 col-xs-push-3 col-md-2 col-md-push-0"><a href="https://www.bothanicamineral.com.br/" target="_blank"><img class="logo" src="img/logo-topo.png" alt="Logo Bothanica Mineral"></a></div>
           <div class="menu-leort col-xs-3 col-xs-pull-6 col-md-8 col-md-pull-0">
             <!-- Navegação para desk-->
             <nav class="visible-md visible-lg">
@@ -63,10 +63,10 @@
       </div>
       <div class="line-blue" id="menu-topo"></div>
     </header>
-    <section class="relative" id="banners"><img class="bandeira" src="img/tag-bm.png" alt="Bothanica Mineral">
-      <div class="container-fluid">
+    <section class="relative" id="banners">
+      <div class="container-fluid sem-padding">
         <div class="row">
-          <div class="col-sm-12">   
+          <div class="col-sm-12" id="banner">  
             <!-- Banners rotativos                -->
             <div id="c-banner">
               <div class="row item-c background-topo centralizar">
@@ -79,13 +79,10 @@
               </div>
             </div>
             <div id="c-banner">
-              <div class="row item-c background-topo2 centralizar">
+              <div class="row item-c background-topo2 centralizar2">
                 <div class="col-sm-12">
-                  <div class="centralizar-interno"><img src="img/borboleta.png" alt="">
-                    <h1 class="text-verde-agua">
-                      Cuide das estrias dela, <br>e ela cuida do que é <br>
-                      realmente importante          
-                    </h1>
+                  <div class="centralizar-interno2"><img src="img/borboleta.png" alt="">
+                    <h1 class="text-verde-agua text-uppercase"> Cuide das estrias dela, <br><span class="linha-meio">e ela cuida do que é <br></span>realmente importante          </h1>
                   </div>
                 </div>
               </div>
@@ -94,20 +91,28 @@
         </div>
       </div>
     </section>
-    <div class="line-gold bottom-line"></div>
-    <section class="pd-80-top" id="leort">
+    <section class="bg-verde possition-pai">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 leort-desc">
-            <div class="line-gold line-small"></div>
-            <h1 class="text-center pd-20-top"> <span class="marca">LEORT® </span><span class="unico">É VIDA!</span></h1>
-            <div class="line-width"></div>
-            <h4 class="bold text-center marca-desc">Fluido para massagem corporal</h4>
-            <p class="pd-20-bottom">
-              Atua como um potente anti-inflamatório, antioxidante e varredor de radicais livres, toxinas e metais pesados, eliminando o ranço celular acumulado. Promove uma destoxificação do organismo, auxiliando no combate da celulite 
-              e outras disfunções estéticas. Tem ação lipolítica e afinidade pelos adipócitos, ativando os complexos enzimáticos que promovem a quebra da gordura de reserva e aumento do metabolismo. Possui também a função de reparação e construção dos tecidos e estrutura da pele, atuando no combate da flacidez e estrias. Aumenta a permeação dos ativos de outros produtos da linha Bothanica Mineral® quando utilizados em associação, potencializando os resultados dos tratamentos. 
-            </p>
-            <div class="line-gold line-small"></div>
+        <div class="row pd-40"> 
+          <h2 class="text-verde-agua text-center">Melhoria de até 80% das estrias na 1° sessão</h2>
+          <div class="col-sm-12 item">
+            <div class="col-sm-6 pd-20-top">
+              <div class="row">
+                <div class="col-sm-6"><img class="img-responsive" src="img/estria-redonda.png" alt="">
+                  <h4 class="text-verde-agua text-center">Antes</h4>
+                </div>
+                <div class="col-sm-6"><img class="img-responsive" src="img/estria-redonda2.png" alt="">
+                  <h4 class="text-verde-agua text-center">Depois</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6"><img class="img-linha-verde-agua" src="img/linha-verde-agua.png" alt="">
+              <div class="position-texto">
+                <h3 class="text-verde-agua">Aline Mafia Moreira</h3>
+                <p class="text-inverse">Técnica em Estética</p>
+                <p class="text-inverse">Conheça</p><img src="img/icon-insta.png" alt=""><img src="img/icon-face.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -115,79 +120,8 @@
     <section class="back-acoes" id="acoes">
       <div class="container">
         <div class="row">
-          <div class="col-sm-10 col-sm-offset-1">
-            <h2 class="bold text-uppercase">7 AÇÕES PRINCIPAIS:</h2>
-            <div class="line-gold line-h3">                   </div>
-            <div class="list-acoes">
-              <h3 class="bold text-left"><img class="icon-acoes" src="img/icon-molecula.png" alt="ortomolecular">GENUINAMENTE ORTOMOLECULAR</h3>
-              <ul>
-                <li>
-                  Potente varredor de radicais livres, promove uma limpeza orgânica no organismo, eliminando toxinas, metais pesados e todo o ranço celular acumulado ao longo dos anos. Essa característica faz com que o produto promova saúde e beleza 
-                  de dentro para fora. 
-                </li>
-                <li>
-                   Possui sinergia com demais produtos da Bothanica Mineral®, promovendo o equilíbrio bioquímico do organismo, essencial para o bom funcionamento do metabolismo celular e efetividade dos tratamentos estéticos.</li>
-                <li>Apresenta uma penetração rápida e uma ação não cumulativa e prolongada.</li>
-              </ul>
-            </div>
-            <div class="list-acoes">
-              <h3 class="bold text-left"><img class="icon-acoes" src="img/icon-molecula.png" alt="ortomolecular">DESTOXIFICANTE</h3>
-              <ul>
-                <li>
-                  Eliminação das toxinas, metais pesados e de todo o ranço celular, promovendo uma limpeza do terreno biológico, permitindo que o organismo fique mais responsivo aos tratamentos estéticos e, consequentemente, gerando melhores resultados.</li>
-              </ul>
-            </div>
-            <div class="list-acoes">
-              <h3 class="bold text-left"><img class="icon-acoes" src="img/icon-molecula.png" alt="ortomolecular">ANTIOXIDANTE </h3>
-              <ul>
-                <li><strong> Neutralização e eliminação de radicais livres,</strong> prevenindo o envelhecimento precoce e outros danos celulares.</li>
-              </ul>
-            </div>
-            <div class="list-acoes">
-              <h3 class="bold text-left"><img class="icon-acoes" src="img/icon-molecula.png" alt="ortomolecular">REORGANIZADOR </h3>
-              <ul>
-                <li>
-                  <strong>Capacidade de equilibrar</strong> desde as menores estruturas corporais, os átomos, promove reestruturação de todas as substâncias que são formadas a partir destes, ou seja, moléculas, células, tecidos, órgãos e sistemas.</li>
-                <li><strong>Função de construção e reparação</strong> dos tecidos e estrutura da pele, atuando no combate da flacidez e estrias.                        </li>
-              </ul>
-            </div>
-            <div class="list-acoes">
-              <h3 class="bold text-left"><img class="icon-acoes" src="img/icon-molecula.png" alt="ortomolecular">LINFOCINÉTICO </h3>
-              <ul>
-                <li>
-                  <strong>Drenagem Linfática:</strong> por consequência do aumento das trocas metabólicas capilares, ocorre o efeito linfocinético pelo aumento da pressão osmótica tecidual, o que favorece o envio do líquido intersticial para o sistema linfático. Isso aumenta a drenagem tecidual,
-                  promovendo descongestionamento e equilíbrio da homeostase celular.
-                </li>
-                <li>
-                  <strong>Aumento da permeabilidade vascular e trocas nos capilares:</strong> o aumento de circulação local favorece o retorno venoso e as trocas de substâncias pelos capilares, pela chegada de sangue rico em nutrientes e retirada de todos os resíduos metabólicos do tecido.</li>
-                <li>
-                  <strong>Aumento da oxigenação e nutrição:</strong> com o aumento das trocas capilares há, consequentemente, aumento na chegada de nutrientes e de oxigênio em locais que antes não estavam sendo bem irrigados.</li>
-                <li>
-                  <strong>Aumento do número de células de defesa (local):</strong> a melhora na circulação e nas trocas capilares permite o transporte de células de defesa para os locais que antes estavam desprotegidos.</li>
-              </ul>
-            </div>
-            <div class="list-acoes">
-              <h3 class="bold text-left"><img class="icon-acoes" src="img/icon-molecula.png" alt="ortomolecular">LIPOLÍTICO </h3>
-              <ul>
-                <li>
-                  <strong>Quebra da gordura:</strong> o produto vai ativar os complexos enzimáticos que promovem a quebra da gordura de reserva. Essa gordura é o triglicerídeo que vai ser quebrado formando 3 ácidos graxos e 1 glicerol. Essas substâncias serão metabolizadas e os resíduos 
-                  eliminados pelas secreções. Diga-se os resíduos/toxinas, pois a gordura deverá ser queimada.
-                </li>
-                <li>
-                  <strong>Acelerador:</strong> LEORT® estimula e acelera o processo de lipólise, apresentando um efeito enzimático. O processo de quebra vai ocorrer de forma natural, porém acelerada.</li>
-                <li>
-                  <strong>Gordura emulsionada:</strong> após a lipólise, o triglicerídeo será quebrado e os resíduos emulsionados dentro do adipócito. Esta emulsificação gera incompatibilidade, forçando a saída desses resíduos da célula adiposa.</li>
-              </ul>
-            </div>
-            <div class="list-acoes">
-              <h3 class="bold text-left"><img class="icon-acoes" src="img/icon-molecula.png" alt="ortomolecular">BIPOLAR </h3>
-              <ul>
-                <li>
-                  <strong>Termogênico ou criogênico,</strong> dependendo dos produtos associados e forma de aplicação - aumento do metabolismo basal: promove aquecimento (efeito termogênico) ou resfriamento (efeito criogênico) local e, consequentemente, estimula o metabolismo a recuperar a temperatura 
-                  ideal. Esse efeito tem um gasto calórico.
-                </li>
-              </ul>
-            </div>
+          <div class="col-sm-10 col-sm-offset-1">                   
+            <h2 class="text-uppercase text-verde-claro">conheça mais sobre o tratamento                   </h2>
           </div>
         </div>
       </div>

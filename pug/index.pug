@@ -9,10 +9,9 @@ block append CSS
 block content
 
     section#banners.relative
-        img.bandeira(src="img/tag-bm.png", alt="Bothanica Mineral")
-        .container-fluid
+        .container-fluid.sem-padding
             .row
-                .col-sm-12    
+                .col-sm-12#banner   
                     // Banners rotativos                
                     #c-banner
                         .row.item-c.background-topo.centralizar
@@ -22,111 +21,43 @@ block content
                                     img(src="img/Logo-striort.png", alt="")
                                     h1.text-verde-agua Depois
                     #c-banner
-                        .row.item-c.background-topo2.centralizar
+                        .row.item-c.background-topo2.centralizar2
                             .col-sm-12
-                                .centralizar-interno
+                                .centralizar-interno2
                                     img(src="img/borboleta.png", alt="")
-                                    h1.text-verde-agua Cuide das estrias dela, <br>
-                                        |e ela cuida do que é <br>
+                                    h1.text-verde-agua.text-uppercase  Cuide das estrias dela, <br>
+                                        span.linha-meio|e ela cuida do que é <br>
                                         | realmente importante          
 
 
-                            
-
-    .line-gold.bottom-line
-
-    section#leort.pd-80-top
+    section.bg-verde.possition-pai
         .container
-            .row
-                .col-sm-10.col-sm-offset-1.leort-desc
-                    .line-gold.line-small
-                    h1.text-center.pd-20-top 
-                        span.marca LEORT® 
-                        span.unico É VIDA!
-                    
-                    .line-width
-                    
-                    h4.bold.text-center.marca-desc Fluido para massagem corporal
-                    p.pd-20-bottom Atua como um potente anti-inflamatório, antioxidante e varredor de radicais livres, toxinas e metais pesados, 
-                        | eliminando o ranço celular acumulado. Promove uma destoxificação do organismo, auxiliando no combate da celulite 
-                        | e outras disfunções estéticas. Tem ação lipolítica e afinidade pelos adipócitos, ativando os complexos enzimáticos que promovem a quebra da gordura de reserva e aumento do metabolismo. Possui também a função de reparação e construção dos tecidos e estrutura da pele, atuando no combate da flacidez e estrias. Aumenta a permeação dos ativos de outros produtos da linha Bothanica Mineral® quando utilizados em associação, potencializando os resultados dos tratamentos. 
-                    .line-gold.line-small
-
+            .row.pd-40 
+                h2.text-verde-agua.text-center Melhoria de até 80% das estrias na 1° sessão
+                .col-sm-12.item
+                    .col-sm-6.pd-20-top
+                        .row
+                            .col-sm-6
+                                img.img-responsive(src="img/estria-redonda.png", alt="")
+                                h4.text-verde-agua.text-center Antes
+                            .col-sm-6
+                                img.img-responsive(src="img/estria-redonda2.png", alt="")
+                                h4.text-verde-agua.text-center Depois
+                    .col-sm-6
+                        img.img-linha-verde-agua(src="img/linha-verde-agua.png", alt="")
+                        .position-texto
+                            h3.text-verde-agua Aline Mafia Moreira
+                            p.text-inverse Técnica em Estética
+                            p.text-inverse Conheça
+                            img(src="img/icon-insta.png", alt="")
+                            img(src="img/icon-face.png", alt="")
 
     section#acoes.back-acoes
         .container
             .row
-                .col-sm-10.col-sm-offset-1
+                .col-sm-10.col-sm-offset-1                    
+                    h2.text-uppercase.text-verde-claro conheça mais sobre o tratamento                   
                     
-                    h2.bold.text-uppercase 7 AÇÕES PRINCIPAIS:
-                    .line-gold.line-h3                    
-                    .list-acoes
-                        h3.bold.text-left
-                            img.icon-acoes(src="img/icon-molecula.png", alt="ortomolecular") 
-                            |GENUINAMENTE ORTOMOLECULAR
-                        ul
-                            li Potente varredor de radicais livres, promove uma limpeza orgânica no organismo, eliminando toxinas, metais pesados e 
-                                | todo o ranço celular acumulado ao longo dos anos. Essa característica faz com que o produto promova saúde e beleza 
-                                | de dentro para fora. 
-                            li  Possui sinergia com demais produtos da Bothanica Mineral®, promovendo o equilíbrio bioquímico do organismo, 
-                                | essencial para o bom funcionamento do metabolismo celular e efetividade dos tratamentos estéticos.
-                            li Apresenta uma penetração rápida e uma ação não cumulativa e prolongada.
-                    .list-acoes
-                        h3.bold.text-left
-                            img.icon-acoes(src="img/icon-molecula.png", alt="ortomolecular")  
-                            |DESTOXIFICANTE
-                        ul
-                            li Eliminação das toxinas, metais pesados e de todo o ranço celular, promovendo uma limpeza do terreno biológico, permitindo que o 
-                                |organismo fique mais responsivo aos tratamentos estéticos e, consequentemente, gerando melhores resultados.
-                    .list-acoes
-                        h3.bold.text-left
-                            img.icon-acoes(src="img/icon-molecula.png", alt="ortomolecular") 
-                            | ANTIOXIDANTE 
-                        ul
-                            li <strong> Neutralização e eliminação de radicais livres,</strong> prevenindo o envelhecimento precoce e outros danos celulares.
-                    .list-acoes
-                        h3.bold.text-left
-                            img.icon-acoes(src="img/icon-molecula.png", alt="ortomolecular") 
-                            | REORGANIZADOR 
-                        ul
-                            li <strong>Capacidade de equilibrar</strong> desde as menores estruturas corporais, os átomos, promove reestruturação de todas as substâncias que são 
-                                |formadas a partir destes, ou seja, moléculas, células, tecidos, órgãos e sistemas.
-                            li <strong>Função de construção e reparação</strong> dos tecidos e estrutura da pele, atuando no combate da flacidez e estrias.                        
-                    .list-acoes
-                        h3.bold.text-left
-                            img.icon-acoes(src="img/icon-molecula.png", alt="ortomolecular") 
-                            | LINFOCINÉTICO 
-                        ul
-                            li <strong>Drenagem Linfática:</strong> por consequência do aumento das trocas metabólicas capilares, ocorre o efeito linfocinético pelo aumento da 
-                                |pressão osmótica tecidual, o que favorece o envio do líquido intersticial para o sistema linfático. Isso aumenta a drenagem tecidual,
-                                | promovendo descongestionamento e equilíbrio da homeostase celular.
-                            li <strong>Aumento da permeabilidade vascular e trocas nos capilares:</strong> o aumento de circulação local favorece o retorno venoso e as trocas de 
-                                |substâncias pelos capilares, pela chegada de sangue rico em nutrientes e retirada de todos os resíduos metabólicos do tecido.
-                            li <strong>Aumento da oxigenação e nutrição:</strong> com o aumento das trocas capilares há, consequentemente, aumento na chegada de nutrientes e de 
-                                |oxigênio em locais que antes não estavam sendo bem irrigados.
-                            li <strong>Aumento do número de células de defesa (local):</strong> a melhora na circulação e nas trocas capilares permite o transporte de células de 
-                                |defesa para os locais que antes estavam desprotegidos.
-                    .list-acoes
-                        h3.bold.text-left
-                            img.icon-acoes(src="img/icon-molecula.png", alt="ortomolecular") 
-                            | LIPOLÍTICO 
-                        ul
-                            li <strong>Quebra da gordura:</strong> o produto vai ativar os complexos enzimáticos que promovem a quebra da gordura de reserva. Essa gordura é o 
-                                |triglicerídeo que vai ser quebrado formando 3 ácidos graxos e 1 glicerol. Essas substâncias serão metabolizadas e os resíduos 
-                                |eliminados pelas secreções. Diga-se os resíduos/toxinas, pois a gordura deverá ser queimada.
-                            li <strong>Acelerador:</strong> LEORT® estimula e acelera o processo de lipólise, apresentando um efeito enzimático. O processo de quebra vai ocorrer de 
-                                |forma natural, porém acelerada.
-                            li <strong>Gordura emulsionada:</strong> após a lipólise, o triglicerídeo será quebrado e os resíduos emulsionados dentro do adipócito. Esta emulsificação 
-                                |gera incompatibilidade, forçando a saída desses resíduos da célula adiposa.
-                    .list-acoes
-                        h3.bold.text-left
-                            img.icon-acoes(src="img/icon-molecula.png", alt="ortomolecular") 
-                            | BIPOLAR 
-                        ul
-                            li <strong>Termogênico ou criogênico,</strong> dependendo dos produtos associados e forma de aplicação - aumento do metabolismo basal: promove aquecimento 
-                                |(efeito termogênico) ou resfriamento (efeito criogênico) local e, consequentemente, estimula o metabolismo a recuperar a temperatura 
-                                |ideal. Esse efeito tem um gasto calórico.
-
 
 
     .line-gold

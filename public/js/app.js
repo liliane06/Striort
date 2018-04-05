@@ -1,6 +1,15 @@
 "use strict";
 (function($){
 
+
+    $('#banner').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+
     // brilho
     function Brilho(canvas, w, h){
         console.log(w);

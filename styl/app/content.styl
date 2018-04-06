@@ -1,27 +1,13 @@
 
 .banners
     @extends .padding-zero
-.img-back-leort
-    @extends .back-contain
-    background-image: url('../img/background-topo.png')
-    background-repeat: no-repeat
-    background-position: center center
 
+#banner-container
+    overflow hidden
 
 .list-acoes
     margin-top 40px
 
-.bg-imagem-tec
-    @extends .back-cover
-    background-image: url('../img/background-meio.png')
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-.back-acoes
-    @extends .back-cover
-    background-image: url('../img/background-moleculas.png')
-    background-repeat: no-repeat;
-    background-position: center center;
 #c-banner
     z-index: 999;
     position: relative;
@@ -51,16 +37,7 @@
 .text-leort
     margin-top: 130px
 
-.seta-left
-.seta-right
-    position absolute
-    top 50%
-    cursor pointer
-    z-index 99
-.seta-left
-    left -70px
-.seta-right
-    right -70px
+
 
 .line-blue
     width: 100%
@@ -95,87 +72,32 @@
     right 0
     float right 
 
-#leort
-    margin-top 100px
-    .unico
-        font-size: 40px
 
-#acoes
-    padding-top 80px
-    padding-bottom: 80px
 
-.pos-fixed
-    position: fixed;
-    z-index: 99999;
-    width: 100%;
 
-.leort-image-text
-    padding-top 180px
-    padding-left 30px
-    .segredo
-        padding-top 40px
-
-.marca
-    font-weight: 500
-    color: $colors['verde-bm']
-    .text-banner-2
-        p
-            line-height: 1
-            text-align: center
-        img
-            margin auto
-            margin-top 20px
-
-.text-banner-2
-    margin-top 25px
-    padding-left: 25px
-    h5
-        line-height: 0.7
-        span
-            font-size: 30px
-            font-weight: light
-
-    img
-        margin-top 20px
-
-.cursos-todos
-    padding 30px 5px
-
-.bottom-line
-    z-index 9
-    position relative
-    margin-top -40px
+.c-banner
+    display: flex
 
 .background-topo
     background-image: url(../img/striort-background-topo.jpg)
     background-size: cover
     background-position: center center
-    height 990px
 
 .background-topo2
     background-image: url(../img/background-gravida-striort.jpg)
     background-size: cover
     background-position: center center
-    height 990px
 
 .centralizar
     display: flex
     justify-content: center
+    width: 100%;
+    height: 100%;
     & > *
         align-self: center
     .centralizar-interno
         display: flex
         justify-content: space-around
-        & > *
-            align-self: center
-.centralizar2
-    display: flex
-    justify-content: center
-    & > *
-        align-self: center
-    .centralizar-interno2
-        display: flex
-        flex-direction: column
         & > *
             align-self: center
 
@@ -216,54 +138,13 @@
         right -10px
 
 @media screen and (max-width: $queries['medium'])
-    .bandeira
-        bottom: -20px;
-        max-width: 450px;
-        left: -150px;
+    .icone-striort
+        max-width 140px
     footer
         .container
             div
                 margin-top 20px
-    .text-banner-2
-        text-align: center
-        p
-            line-height: 1
-            text-align: center
-        img
-            margin auto
-            margin-top 20px
-    .section
-        padding 50px 0
-        padding-bottom: 80px
-    .leort-image-text
-        padding-top 60px
-        padding-bottom: 60px
-    #leort
-        margin-top 50px
-        margin-bottom: 0
-    #acoes
-        margin-top 0px
-        padding-top: 40px;
-        padding-bottom: 50px;
-    .img-back-leort
-        text-align: center
 
-    img.leort-banner1
-        margin auto
-    #c-banner
-        padding-top 20px        
-    .text-leort
-        margin-top: 20px
-
-    .leort-banner1
-        margin 0 0 0 0
-    .img-back-leort
-        img 
-            max-width 280px
-    .seta-left
-        left 0
-    .seta-right
-        right 0
 
 @media screen and (max-width: $queries['small'])
     .leort-desc

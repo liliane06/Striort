@@ -1,17 +1,24 @@
 header
 	height: auto
-	padding-top 30px
+	padding-top 20px
+	position: fixed
+	left 0
+	top: 0
+	width: 100%
+	z-index 99
 	.container
-		padding-bottom: 30px
+		padding-bottom: 20px
 	.rede-sociais
 		text-align: left
 	
-.logo-leort
+.logo-striort
 	text-align: left 
 
 .logo-container
 	padding: 15px 0
 
+.center-vertical
+	@extends .flex-center-vertical
 
 footer
 	@extend .text-inverse
@@ -22,13 +29,12 @@ footer
 .rede-sociais-face
 	padding-right: 10px
 
-.cor-menu
-	background-color: alpha($colors["inverse"], 0.9)
+header
+	background-color: alpha($colors["inverse"], 0.7)
 
 @media screen and (max-width: $queries['medium'])
 	header
 		height: auto
-		background-image: url(../img/back-topo.jpg)
 		background-repeat: repeat-x
 		padding-top 15px
 		.container

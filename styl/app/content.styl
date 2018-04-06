@@ -37,8 +37,6 @@
 .text-leort
     margin-top: 130px
 
-
-
 .line-blue
     width: 100%
     height 1px
@@ -60,11 +58,6 @@
     background-position: center center
     background-size: contain
 
-.line-width-big
-    width: 400px;
-    height 2px
-    background-image: url(../img/linha-striort.png)
-
 .arrowsPlace
     width: 120px
     height 40px;
@@ -72,22 +65,25 @@
     right 0
     float right 
 
-
-
-
 .c-banner
     display: flex
 
-.background-topo
-    background-image: url(../img/striort-background-topo.jpg)
+.background-cover
     background-size: cover
     background-position: center center
+.background-topo
+    background-image: url(../img/striort-background-topo.jpg)
+    @extends .background-cover
+
 
 .background-topo2
     background-image: url(../img/background-gravida-striort.jpg)
-    background-size: cover
-    background-position: center center
+    @extends .background-cover
 
+#curso
+    background-image: url(../img/background-mulher-striort.jpg)
+    background-position: center right
+    background-repeat: no-repeat
 .centralizar
     display: flex
     justify-content: center
@@ -101,12 +97,20 @@
         & > *
             align-self: center
 
+.texto-banner-gravida
+    justify-content: start 
+    & > div
+        margin-left: 50px
+
 .texto-banner-1
     font-size: 30px
     line-height: 1.2
 
 .sem-padding
     padding: 0
+
+.section 
+    padding remify(50px) 0
 
 .linha-meio
     font-weight: 100
@@ -144,6 +148,10 @@
         .container
             div
                 margin-top 20px
+    .texto-banner-gravida
+        justify-content: start 
+        & > div
+            margin-left: 0
 
 
 @media screen and (max-width: $queries['small'])

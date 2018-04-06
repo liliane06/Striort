@@ -26,11 +26,14 @@ footer
 		@extend .light
 
 
-.rede-sociais-face
+.rede-sociais
 	padding-right: 10px
+	display: flex
+	justify-content: space-around
 
 header
-	background-color: alpha($colors["inverse"], 0.7)
+	background-color: alpha($colors["inverse"], 0.8)
+	border-bottom 1px solid $colors['verde-texto']
 
 @media screen and (max-width: $queries['medium'])
 	header
@@ -45,16 +48,12 @@ header
 	.logo-leort
 		text-align: center
 
-	.rede-sociais-face
-		padding-right: 4px
 
 @media screen and (max-width: $queries['small'])
-
 	.rede-sociais-insta
 	.rede-sociais-face
 		margin: auto
 		max-width 30px
 		display block
-	.rede-sociais-face
-		margin-top: -10px
+
 	

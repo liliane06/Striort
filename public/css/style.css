@@ -1002,11 +1002,17 @@ header .rede-sociais {
 .logo-container {
   padding: 15px 0;
 }
-.rede-sociais-face {
+.rede-sociais {
   padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 header {
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 1px solid #609c81;
 }
 @media screen and (max-width: 768px) {
   header {
@@ -1023,9 +1029,6 @@ header {
   .logo-leort {
     text-align: center;
   }
-  .rede-sociais-face {
-    padding-right: 4px;
-  }
 }
 @media screen and (max-width: 576px) {
   .rede-sociais-insta,
@@ -1033,9 +1036,6 @@ header {
     margin: auto;
     max-width: 30px;
     display: block;
-  }
-  .rede-sociais-face {
-    margin-top: -10px;
   }
 }
 #banner-container {
@@ -1099,11 +1099,6 @@ header {
   background-position: center center;
   background-size: contain;
 }
-.line-width-big {
-  width: 400px;
-  height: 2px;
-  background-image: url("../img/linha-striort.png");
-}
 .arrowsPlace {
   width: 120px;
   height: 40px;
@@ -1116,15 +1111,22 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-.background-topo {
-  background-image: url("../img/striort-background-topo.jpg");
+.background-cover,
+.background-topo,
+.background-topo2 {
   background-size: cover;
   background-position: center center;
 }
+.background-topo {
+  background-image: url("../img/striort-background-topo.jpg");
+}
 .background-topo2 {
   background-image: url("../img/background-gravida-striort.jpg");
-  background-size: cover;
-  background-position: center center;
+}
+#curso {
+  background-image: url("../img/background-mulher-striort.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 .centralizar {
   display: -webkit-box;
@@ -1153,12 +1155,23 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
 }
+.texto-banner-gravida {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.texto-banner-gravida > div {
+  margin-left: 50px;
+}
 .texto-banner-1 {
   font-size: 30px;
   line-height: 1.2;
 }
 .sem-padding {
   padding: 0;
+}
+.section {
+  padding: 5rem 0;
 }
 .linha-meio {
   font-weight: 100;
@@ -1199,6 +1212,14 @@ header {
   }
   footer .container div {
     margin-top: 20px;
+  }
+  .texto-banner-gravida {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .texto-banner-gravida > div {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1377,6 +1398,8 @@ footer .logo-footer {
   font-weight: bold;
 }
 .display-menu {
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1387,7 +1410,7 @@ footer .logo-footer {
 .display-menu li {
   list-style: none;
   text-transform: uppercase;
-  margin-right: 50px;
+  margin-right: 35px;
   padding-top: 8px;
 }
 .display-menu li a {

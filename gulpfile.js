@@ -3,6 +3,7 @@ var stylus		= require ( 'gulp-stylus' );
 var uglifycss 	= require( 'gulp-uglifycss' );
 var prefixer	= require( 'gulp-autoprefixer');
 var sourcemaps	= require( 'gulp-sourcemaps' );
+var concatCss 	= require('gulp-concat-css');
 var pug 		= require( 'gulp-pug' );
 var browserSync	= require('browser-sync').create();
 
@@ -67,17 +68,24 @@ gulp.task( 'stylus:w', function(){
 	*Minimiza o tamanho do CSS
 	usage: no promt de comando gulp css
 */
-gulp.task('finish', function () {
+gulp.task('cssUgjiy', function () {
 
-  gulp.src('./css/**/*.css')
+  return gulp.src('./public/css/**/*.css')
     .pipe(uglifycss({
 
-      "maxLineLen": 80,
-      "uglyComments": true
+      "maxLineLen": 80
 
     }))
     .pipe(gulp.dest(config.distCSS));
 });
+
+
+gulp.task('finish', ['cssUgjiy'], function () {
+	return gulp.src(config.distCSS + '/*.css')
+	  .pipe(concatCss("allBiz.css"))
+	  .pipe(uglifycss())
+	  .pipe(gulp.dest(config.distCSS ));
+  });
 
 
 

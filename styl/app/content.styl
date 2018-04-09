@@ -16,6 +16,27 @@
     z-index 3
     margin-left: -230px
 
+.esteticista
+    text-align: left
+    border-left: 1px solid $colors['verde-texto']
+
+.esteticista-container
+    @extends .align-center
+    & > *
+        align-self: center
+
+.esteticista-social
+    @extends .align-flex
+    margin-top: 5px
+    a 
+        margin-right 5px
+
+.funcao
+    @extends .padding-zero
+    @extends .margin-zero
+    line-height: remify(10px)
+    font-size: remify(12px)
+
 .icon-acoes
     max-width 50px
     margin-right: 10px
@@ -41,6 +62,8 @@
     width: 100%
     height 1px
     background-image: url(../img/linha-striort.png)
+    background-size: contain;
+
 .line-small
     background-image: url(../img/linha-striort.png)
     background-position: center center
@@ -57,13 +80,6 @@
     background-image: url(../img/linha-striort.png)
     background-position: center center
     background-size: contain
-
-.arrowsPlace
-    width: 120px
-    height 40px;
-    position relative
-    right 0
-    float right 
 
 .c-banner
     display: flex
@@ -125,6 +141,10 @@
     border-left: 1px solid #82beab
     padding: 20px
 
+.arrow-right
+    right 0
+    transform: scaleX(-1)
+
 
 @media screen and (max-width: $queries['large'])
     .leort-image-text
@@ -142,6 +162,13 @@
         right -10px
 
 @media screen and (max-width: $queries['medium'])
+    .esteticista
+        text-align: center
+        border-left: 0
+        border-top: 1px solid $colors['verde-texto'];
+        margin-top: 20px;
+    .esteticista-social
+        justify-content: center
     .icone-striort
         max-width 140px
     footer
@@ -152,6 +179,11 @@
         justify-content: start 
         & > div
             margin-left: 0
+    .esteticista-container
+        @extends .align-center
+        flex-direction: column
+        & > *
+            align-self: center
 
 
 @media screen and (max-width: $queries['small'])
@@ -173,6 +205,12 @@
             img
                 margin: auto
 @media screen and (max-width: 390px)
+    .background-topo
+        background-position: 44%
+    .h1-banner
+        font-size: 20px
+    .icone-striort
+        max-width 100px
     .bandeira
         bottom: -20px;     
         max-width: 420px;     

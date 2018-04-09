@@ -44,8 +44,42 @@ html {
   z-index: 2;
 }
 .padding-zero,
-.banners {
+.banners,
+.funcao {
   padding: 0;
+}
+.margin-zero,
+.funcao {
+  margin: 0;
+}
+.align-flex,
+.align-center,
+.col-same-height,
+.display-Flex,
+.esteticista-container,
+.esteticista-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.align-center,
+.col-same-height,
+.esteticista-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.align-center > *,
+.col-same-height > *,
+.esteticista-container > * {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.col-same-height > * {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .back-cover {
   background-size: cover;
@@ -74,9 +108,6 @@ html {
       align-self: center;
 }
 .display-Flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -170,7 +201,7 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 3.64rem;
+    font-size: 3.12rem;
     text-align: center;
   }
 }
@@ -185,7 +216,7 @@ h2 {
 }
 @media screen and (max-width: 576px) {
   h2 {
-    font-size: 3.08rem;
+    font-size: 2.64rem;
     text-align: center;
   }
 }
@@ -200,7 +231,7 @@ h3 {
 }
 @media screen and (max-width: 576px) {
   h3 {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 }
@@ -215,7 +246,7 @@ h4 {
 }
 @media screen and (max-width: 576px) {
   h4 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
@@ -230,7 +261,7 @@ h5 {
 }
 @media screen and (max-width: 576px) {
   h5 {
-    font-size: 1.12rem;
+    font-size: 0.96rem;
     text-align: center;
   }
 }
@@ -245,7 +276,7 @@ h6 {
 }
 @media screen and (max-width: 576px) {
   h6 {
-    font-size: 0.98rem;
+    font-size: 0.84rem;
     text-align: center;
   }
 }
@@ -277,13 +308,13 @@ h6 {
   background-color: #767676;
 }
 .bg-verde {
-  background-color: #3a4f46;
+  background-color: #334f43;
 }
 .bg-verde-agua {
   background-color: #80bfaa;
 }
 .bg-verde-texto {
-  background-color: #609c81;
+  background-color: #509c7f;
 }
 .bg-verde-claro {
   background-color: #81bfaa;
@@ -302,13 +333,13 @@ footer {
   color: #767676;
 }
 .text-verde {
-  color: #3a4f46;
+  color: #334f43;
 }
 .text-verde-agua {
   color: #80bfaa;
 }
 .text-verde-texto {
-  color: #609c81;
+  color: #509c7f;
 }
 .text-verde-claro {
   color: #81bfaa;
@@ -995,6 +1026,7 @@ header .container {
 }
 header .rede-sociais {
   text-align: left;
+  max-width: 13rem;
 }
 .logo-striort {
   text-align: left;
@@ -1011,8 +1043,12 @@ header .rede-sociais {
       justify-content: space-around;
 }
 header {
-  background-color: rgba(255,255,255,0.8);
-  border-bottom: 1px solid #609c81;
+  background-color: rgba(255,255,255,0.9);
+}
+.arrow {
+  top: 34%;
+  position: absolute;
+  z-index: 99;
 }
 @media screen and (max-width: 768px) {
   header {
@@ -1038,6 +1074,30 @@ header {
     display: block;
   }
 }
+@media screen and (max-width: 478px) {
+  .rede-sociais {
+    padding: 0 0.3rem;
+  }
+  .rede-sociais img {
+    max-width: 25px;
+  }
+}
+.slick-dots {
+  margin-top: -2.4rem;
+  position: unset;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #509c7f;
+}
+.slick-dots li.slick-active button:before {
+  font-size: 12px;
+  color: #509c7f;
+  opacity: 1;
+}
 #banner-container {
   overflow: hidden;
 }
@@ -1052,6 +1112,25 @@ header {
   position: absolute;
   z-index: 3;
   margin-left: -230px;
+}
+.esteticista {
+  text-align: left;
+  border-left: 1px solid #509c7f;
+}
+.esteticista-container > * {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.esteticista-social {
+  margin-top: 5px;
+}
+.esteticista-social a {
+  margin-right: 5px;
+}
+.funcao {
+  line-height: 1rem;
+  font-size: 1.2rem;
 }
 .icon-acoes {
   max-width: 50px;
@@ -1079,6 +1158,7 @@ header {
   width: 100%;
   height: 1px;
   background-image: url("../img/linha-striort.png");
+  background-size: contain;
 }
 .line-small,
 .line-h3 {
@@ -1098,13 +1178,6 @@ header {
   background-image: url("../img/linha-striort.png");
   background-position: center center;
   background-size: contain;
-}
-.arrowsPlace {
-  width: 120px;
-  height: 40px;
-  position: relative;
-  right: 0;
-  float: right;
 }
 .c-banner {
   display: -webkit-box;
@@ -1186,6 +1259,11 @@ header {
   border-left: 1px solid #82beab;
   padding: 20px;
 }
+.arrow-right {
+  right: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;
@@ -1207,6 +1285,17 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  .esteticista {
+    text-align: center;
+    border-left: 0;
+    border-top: 1px solid #509c7f;
+    margin-top: 20px;
+  }
+  .esteticista-social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .icone-striort {
     max-width: 140px;
   }
@@ -1220,6 +1309,17 @@ header {
   }
   .texto-banner-gravida > div {
     margin-left: 0;
+  }
+  .esteticista-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .esteticista-container > * {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1243,6 +1343,15 @@ header {
   }
 }
 @media screen and (max-width: 390px) {
+  .background-topo {
+    background-position: 44%;
+  }
+  .h1-banner {
+    font-size: 20px;
+  }
+  .icone-striort {
+    max-width: 100px;
+  }
   .bandeira {
     bottom: -20px;
     max-width: 420px;
@@ -1269,7 +1378,7 @@ footer {
   padding: 60px 0 0px 0px;
 }
 .logo-biz {
-  background-color: #96999b;
+  background-color: #407d66;
   width: 100%;
   padding: 10px 0;
   margin-top: 50px;
@@ -1380,7 +1489,7 @@ footer .logo-footer {
 .display-menu-mob li {
   list-style: none;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   margin-top: 10px;
 }
@@ -1390,11 +1499,11 @@ footer .logo-footer {
   transition: 0.3s;
 }
 .display-menu-mob li a:hover {
-  color: ;
+  color: #509c7f;
   font-weight: bold;
 }
 .display-menu-mob li a.ativo {
-  color: ;
+  color: #509c7f;
   font-weight: bold;
 }
 .display-menu {
@@ -1411,7 +1520,7 @@ footer .logo-footer {
   list-style: none;
   text-transform: uppercase;
   margin-right: 35px;
-  padding-top: 8px;
+  font-size: 14px;
 }
 .display-menu li a {
   text-decoration: none;
@@ -1435,7 +1544,7 @@ footer .logo-footer {
   height: 4px;
   display: block;
   border-radius: 3px;
-  background-color: #3a4f46;
+  background-color: #334f43;
 }
 @-webkit-keyframes rotacao {
   from {

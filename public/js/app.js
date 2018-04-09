@@ -35,7 +35,9 @@
         speed: 500,
         fade: true,
         arrows: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',
+        nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>'
       });
 
     

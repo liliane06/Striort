@@ -1365,6 +1365,9 @@ header {
   opacity: 0.75;
   color: #509c7f;
 }
+.icone-da-lista {
+  list-style: url("../img/icone-da-lista.png");
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;

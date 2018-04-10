@@ -144,8 +144,98 @@
 .arrow-right
     right 0
     transform: scaleX(-1)
+.80
+    font-size: remify(50px)
+
+.striort-conheca
+    .striort-title
+        h4
+            margin: 0
+            padding 0
 
 
+.estec-docs
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px
+    list-style: none;
+
+    text-align: center;
+}
+.estec-docs li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.estec-docs li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.estec-docs li button:hover,
+.estec-docs li button:focus
+{
+    outline: none;
+}
+.estec-docs li button:hover:before,
+.estec-docs li button:focus:before
+{
+    opacity: 1;
+}
+.estec-docs li button:before
+{
+    font-family: 'slick';
+    font-size: 12px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: 1;
+    color: $colors['verde-texto'];
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.estec-docs li.slick-active button:before
+{
+    opacity: .75;
+    color: $colors['verde-texto'];
+}
 @media screen and (max-width: $queries['large'])
     .leort-image-text
         padding-top 20px
@@ -162,11 +252,14 @@
         right -10px
 
 @media screen and (max-width: $queries['medium'])
+    .80
+        font-size: remify(45px)
     .esteticista
         text-align: center
         border-left: 0
         border-top: 1px solid $colors['verde-texto'];
         margin-top: 20px;
+        padding-top 20px
     .esteticista-social
         justify-content: center
     .icone-striort

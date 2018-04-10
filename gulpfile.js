@@ -7,8 +7,6 @@ var concatCss 	= require('gulp-concat-css');
 var pug 		= require( 'gulp-pug' );
 var browserSync	= require('browser-sync').create();
 
-
-
 var config = { 
 	
 	// arquivos que o gulp espera por moficação
@@ -68,7 +66,7 @@ gulp.task( 'stylus:w', function(){
 	*Minimiza o tamanho do CSS
 	usage: no promt de comando gulp css
 */
-gulp.task('cssUgjiy', function () {
+gulp.task('CssUgly', function () {
 
   return gulp.src('./public/css/**/*.css')
     .pipe(uglifycss({
@@ -79,12 +77,11 @@ gulp.task('cssUgjiy', function () {
     .pipe(gulp.dest(config.distCSS));
 });
 
-
-gulp.task('finish', ['cssUgjiy'], function () {
-	return gulp.src(config.distCSS + '/*.css')
-	  .pipe(concatCss("allBiz.css"))
-	  .pipe(uglifycss())
-	  .pipe(gulp.dest(config.distCSS ));
+gulp.task('finish', function () {
+	return gulp.src(config.destCSS + '/*.css')
+	  .pipe(concatCss( "allBiz.css" ) )
+	  .pipe( uglifycss() )
+	  .pipe(gulp.dest( config.distCSS ));
   });
 
 

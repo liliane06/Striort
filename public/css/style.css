@@ -1019,7 +1019,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 4;
 }
 header .container {
   padding-bottom: 20px;
@@ -1077,6 +1077,8 @@ header {
 @media screen and (max-width: 478px) {
   .rede-sociais {
     padding: 0 0.3rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .rede-sociais img {
     max-width: 25px;
@@ -1264,6 +1266,74 @@ header {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
+.80 {
+  font-size: 5rem;
+}
+.striort-conheca .striort-title h4 {
+  margin: 0;
+  padding: 0;
+}
+.estec-docs {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  list-style: none;
+  text-align: center;
+}
+.estec-docs li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.estec-docs li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.estec-docs li button:hover,
+.estec-docs li button:focus {
+  outline: none;
+}
+.estec-docs li button:hover:before,
+.estec-docs li button:focus:before {
+  opacity: 1;
+}
+.estec-docs li button:before {
+  font-family: 'slick';
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 1;
+  color: #509c7f;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.estec-docs li.slick-active button:before {
+  opacity: 0.75;
+  color: #509c7f;
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;
@@ -1285,11 +1355,15 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  .80 {
+    font-size: 4.5rem;
+  }
   .esteticista {
     text-align: center;
     border-left: 0;
     border-top: 1px solid #509c7f;
     margin-top: 20px;
+    padding-top: 20px;
   }
   .esteticista-social {
     -webkit-box-pack: center;

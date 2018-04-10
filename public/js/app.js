@@ -23,14 +23,19 @@
     $('#banner').slick({
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1500,
         fade: true,
         arrows: false,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        focusOnSelect: false,
+        pauseOnFocus: false,
+        autoplay: true,
+        autoplaySpeed: 6000,
       });
 
       $('#galeriaEst').slick({
         dots: true,
+        dotsClass: "estec-docs",
         infinite: true,
         speed: 500,
         fade: true,

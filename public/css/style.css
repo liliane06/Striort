@@ -1188,7 +1188,8 @@ header {
 }
 .background-cover,
 .background-topo,
-.background-topo2 {
+.background-topo2,
+#agenda {
   background-size: cover;
   background-position: center center;
 }
@@ -1269,9 +1270,39 @@ header {
 .80 {
   font-size: 5rem;
 }
+.curso-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.curso-flex > * {
+  width: 33.33333%;
+  border: 1px solid #fff;
+}
+.curso-flex > .oneLine {
+  width: 100%;
+}
+.striort-conheca .striort-title {
+  line-height: auto;
+}
 .striort-conheca .striort-title h4 {
+  font-size: 1.7rem;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
+  padding-left: 10px;
+  text-align: left;
+}
+.striort-conheca .striort-desc {
+  padding: 20px;
+}
+.striort-conheca .striort-desc p {
+  line-height: 25px;
+  font-size: 16px;
+}
+#agenda {
+  background-image: url("../img/background-verde-striort.jpg");
 }
 .estec-docs {
   position: absolute;
@@ -1355,6 +1386,10 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  .curso-flex > * {
+    width: 47%;
+    margin: 2px;
+  }
   .80 {
     font-size: 4.5rem;
   }
@@ -1397,6 +1432,10 @@ header {
   }
 }
 @media screen and (max-width: 576px) {
+  .curso-flex > * {
+    width: 100%;
+    margin: 2px;
+  }
   .leort-desc {
     margin-top: 40px;
   }

@@ -147,12 +147,33 @@
 .80
     font-size: remify(50px)
 
+.curso-flex
+    display: flex
+    flex-wrap: wrap
+    & > *
+        width: 33.33333%
+        border 1px solid white
+    & > .oneLine
+            width: 100% 
+
 .striort-conheca
     .striort-title
         h4
+            font-size: remify(17px)
             margin: 0
-            padding 0
+            padding 10px 0
+            padding-left: 10px
+            text-align: left
+        line-height: auto
+    .striort-desc
+        padding: 20px
+        p 
+            line-height: 25px;
+            font-size: 16px;
 
+#agenda
+    @extends .background-cover
+    background-image: url('../img/background-verde-striort.jpg')
 
 .estec-docs
 {
@@ -252,6 +273,10 @@
         right -10px
 
 @media screen and (max-width: $queries['medium'])
+    .curso-flex
+        & > *
+            width: 47%
+            margin 2px
     .80
         font-size: remify(45px)
     .esteticista
@@ -280,9 +305,12 @@
 
 
 @media screen and (max-width: $queries['small'])
+    .curso-flex
+        & > *
+            width: 100%
+            margin 2px
     .leort-desc
         margin-top 40px
-    //tetste
     .item-c
         h1
         p 

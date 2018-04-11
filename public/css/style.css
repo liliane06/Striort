@@ -1369,6 +1369,23 @@ header {
 .icone-da-lista {
   list-style: url("../img/icone-da-lista.png");
 }
+.curriculo {
+  margin-top: 20px;
+}
+.curriculo li {
+  padding: 10px;
+  list-style: none;
+}
+.container-curriculo button {
+  width: 90%;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #7cbea9;
+  border-radius: 10px;
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;

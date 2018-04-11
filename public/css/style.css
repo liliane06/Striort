@@ -1663,6 +1663,11 @@ footer .logo-footer {
   border-radius: 3px;
   background-color: #334f43;
 }
+@media screen and (max-width: 768px) {
+  .display-menu li {
+    margin-right: 25px;
+  }
+}
 @-webkit-keyframes rotacao {
   from {
     -webkit-transform: rotate(7deg);

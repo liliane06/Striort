@@ -44,6 +44,18 @@
         prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',
         nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>'
       });
+    
+      $('#cuidadoras').slick({
+        dots: true,
+        dotsClass: "estec-docs",
+        infinite: true,
+        speed: 500,
+        fade: true,
+        arrows: true,
+        cssEase: 'linear',
+        prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',
+        nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>'
+      });
 
     
 
@@ -93,5 +105,9 @@
     window.addEventListener('load', function(){
         $('#loader').fadeOut(200);
         maxHeightScreenMinus($(".c-banner"));
+    })
+
+    $('.container-curriculo').on('click', function(){
+        $(this).children('.container-filho').slideToggle();
     })
 })($)

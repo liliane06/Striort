@@ -59,7 +59,6 @@ gulp.task( 'stylus:w', function(){
 
 	gulp.watch(config.assistir, [ 'stylus','stylusLib' , 'pug' ] );
 
-
 });
 
 /** 
@@ -82,7 +81,7 @@ gulp.task('finish', function () {
 	  .pipe(concatCss( "allBiz.css" ) )
 	  .pipe( uglifycss() )
 	  .pipe(gulp.dest( config.distCSS ));
-  });
+});
 
 
 

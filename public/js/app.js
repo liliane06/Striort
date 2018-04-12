@@ -8,7 +8,6 @@
      * @param {number} num - numero que irá subtrair o o tamanho total da tela
      */
     function maxHeightScreenMinus(el, num){
-        console.log($(el))
         if(typeof el != 'object'){
             throw "Essa função precisa de um objeto"
         }
@@ -18,7 +17,18 @@
 
         $(el).height(screenHeight - minus);
 
+    }
 
+    function mostrarIrTopo(e){
+
+        let btn = $('#ir-topo');
+        let posY = e.currentTarget.scrollY
+        if(posY > 800){
+            $(btn).fadeIn(200);
+        }
+        else{
+            $(btn).fadeOut(200);
+        }
     }
     $('#banner').slick({
         dots: true,
@@ -57,17 +67,49 @@
         nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>'
       });
 
+
+
       $('#midia').slick({
         dots: true,
+        infinite: false,
+        speed: 300,
         dotsClass: "estec-docs",
-        infinite: true,
-        speed: 500,
-        fade: true,
-        arrows: true,
-        cssEase: 'linear',
+        slidesToShow: 2,
+        slidesToScroll: 2,
         prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',
-        nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>'
+        nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
+
+
+
 
     
 
@@ -121,5 +163,9 @@
 
     $('.container-curriculo').on('click', function(){
         $(this).children('.container-filho').slideToggle();
-    })
+    });
+
+    window.addEventListener('scroll', function(e){
+        mostrarIrTopo(e);
+    });
 })($)

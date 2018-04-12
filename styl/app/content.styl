@@ -37,6 +37,10 @@
     line-height: remify(10px)
     font-size: remify(12px)
 
+
+.blog-img-prod
+    margin-top 8px
+
 .icon-acoes
     max-width 50px
     margin-right: 10px
@@ -295,6 +299,9 @@
 .espacamento
     padding: 10px
 
+.banner-img-striort
+    max-width: 100px
+
 @media screen and (max-width: $queries['large'])
     .leort-image-text
         padding-top 20px
@@ -309,6 +316,12 @@
         left -10px
     .seta-right
         right -10px
+
+@media screen and (max-width: 1100px)
+    .background-topo2
+        background-size: cover;
+        background-position 60% 10%
+        background-repeat: no-repeat;
 
 @media screen and (max-width: $queries['medium'])
     .curso-flex
@@ -343,6 +356,10 @@
 
 
 @media screen and (max-width: $queries['small'])
+    .background-topo2
+        background-size: 700px;
+        background-position bottom 
+        background-repeat: no-repeat;
     .curso-flex
         & > *
             width: 100%
@@ -363,7 +380,23 @@
         .text-banner
             img
                 margin: auto
+
+@media screen and (max-width: 480px)
+    .banner-title-striort
+        font-size: remify(24px)
+        margin-top: 5px
+    .banner-img-striort
+        max-width: 40px
+        margin-top: -20px
+    .background-topo2
+        background-size: 900px;
+        background-position bottom 
+        background-repeat: no-repeat;
 @media screen and (max-width: 390px)
+    .background-topo2
+        background-size: 650px;
+        background-position bottom 
+        background-repeat: no-repeat;
     .background-topo
         background-position: 44%
     .h1-banner

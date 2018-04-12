@@ -1,21 +1,22 @@
 .container.section
-    .row
-        //.col-xs-12
-            h3.text-uppercase.text-verde-texto.text-center  conteúdo programático
+    .row(style="margin:0")
+        .col-xs-12
+            h3.text-uppercase.text-verde-agua.text-center  conteúdo programático
     .curso-flex(style="padding: 0 15px")
-        .striort-conheca.bg-verde-texto                    
+        .striort-conheca.bg-verde-agua                    
             .bg-verde.striort-title
                 h4.text-inverse A PELE
             .text-inverse.striort-desc
-                p É uma Técnica Ortomolecular de combate as estrias.
-                    | É uma inovaçãoabsoluta, com resultados incríveis e
-                    | nunca antes visto, pois promete melhorar a
-                    | aparência das Estrias Brancas em até 80% já na
-                    |  primeira sessão. É um método diferente, não
-                    |  invasivo e não-cirúrgico.
+                ul.list-bm-escuro
+                    li Epiderme - camada basal, espinhosa, granulosa, lúcida e córnea
+                    li Derme
+                    li Tecido celular subcutâneop (hipoderme)
+                    li Gândulas sudoríparas
+                    li Irrigação sanguínea da derme
+                    li Sistema linfático da derme
 
 
-        .striort-conheca.bg-verde-texto                   
+        .striort-conheca.bg-verde-agua                   
             .bg-verde.striort-title
                 h4.text-inverse O QUE VOU APRENDER NO CURSO?
             .text-inverse.striort-desc
@@ -26,7 +27,7 @@
                     | principalmente na vida de todos os seus pacientes.
 
 
-        .striort-conheca.bg-verde-texto                   
+        .striort-conheca.bg-verde-agua                   
             .bg-verde.striort-title
                 h4.text-inverse DESCRIÇÃO
             .text-inverse.striort-desc
@@ -34,10 +35,8 @@
                     | ministrado pela Dra Ana Carolina Almeida aborda de  forma teórico-demonstrativo-prático todo o
                     | procedimento, aplicando-o em sala de aula.
 
-.container.section
-    .row
-        .col-sm-12
-            p Profissionais e acadêmicos de saúde que contenham especialização em estética nas seguintes áreas:
-                ul
+        .pd-40(style="width:100%; padding-bottom: 0")
+            h4.text-verde.bolder Profissionais e acadêmicos de saúde que contenham especialização em estética nas seguintes áreas:
+                ul.list-bm.text-verde
                     each i in ['Biomédicos', 'Fisioterapeutas', 'Enfermeiros', 'Esteticistas (com formação superior/técnica/tecnóloga a partir do 6º período)' ,'Farmacêutico(a) Esteta.']
                         li #{i}

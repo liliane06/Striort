@@ -56,7 +56,7 @@
                 color: $colors['verde-agua']
                 font-weight: bold
             &.ativo
-               color: $colors['verde-bm']
+               color: $colors['verde-texto']
                font-weight: bold
 .menu-mob
     cursor pointer
@@ -73,7 +73,13 @@
 @media screen and (max-width: $queries['medium'])
     .display-menu
         li
-            margin-right: 25px
+            margin-right: 20px
+            font-size: 14px
+@media screen and (max-width: $queries['small'])
+    .display-menu
+        li
+            margin-right: 15px
+            font-size: 14px
 
 
 

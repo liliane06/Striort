@@ -1,25 +1,31 @@
 
-p, .font-style 
+p, ul, .font-style 
 	letter-spacing remify($letterSpacing)
 	margin-bottom remify(20px)
-	font-size: 22px
 	line-height: $lineHeight
 	font-size: $font-size['medium']
 
-#acoes
-	ul
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		li
-			@extends .font-style
-			margin-bottom: 0
-			padding-left: 4em;
-			text-indent: -1.0em;
-			&::before
-				content: "• ";
-				font-size: 28px
-				color: $colors['verde-bm']
+
+ul.list-bm
+	list-style: none;
+	padding: 0;
+	padding-left: 15px
+	margin: 0;
+	li
+		line-height: 20px
+		margin-bottom: 0
+		list-style: url("../img/icone-da-lista.png")
+
+ul.list-bm-escuro
+	list-style: none;
+	padding: 0;
+	padding-left: 15px
+	margin: 0;
+	li
+		line-height: 20px
+		margin-bottom: 0
+		list-style: url("../img/icone-lista-escuro.png");
+		
 
 
 @media screen and (max-width: $queries['medium'])

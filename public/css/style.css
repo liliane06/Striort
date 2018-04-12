@@ -90,6 +90,9 @@ html {
 .to-right {
   float: right;
 }
+.to-left {
+  float: left;
+}
 .text-overflow {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -141,8 +144,8 @@ html {
   }
 }
 p,
+ul,
 .font-style,
-#acoes ul li,
 .font-extra-small,
 .font-small,
 .font-medium,
@@ -150,24 +153,30 @@ p,
 .font-extra-large {
   letter-spacing: 0.02rem;
   margin-bottom: 2rem;
-  font-size: 22px;
   line-height: 30px;
   font-size: 18px;
 }
-#acoes ul {
+ul.list-bm {
   list-style: none;
   padding: 0;
+  padding-left: 15px;
   margin: 0;
 }
-#acoes ul li {
+ul.list-bm li {
+  line-height: 20px;
   margin-bottom: 0;
-  padding-left: 4em;
-  text-indent: -1em;
+  list-style: url("../img/icone-da-lista.png");
 }
-#acoes ul li::before {
-  content: "• ";
-  font-size: 28px;
-  color: ;
+ul.list-bm-escuro {
+  list-style: none;
+  padding: 0;
+  padding-left: 15px;
+  margin: 0;
+}
+ul.list-bm-escuro li {
+  line-height: 20px;
+  margin-bottom: 0;
+  list-style: url("../img/icone-lista-escuro.png");
 }
 @media screen and (max-width: 768px) {
   #acoes ul li {
@@ -201,7 +210,7 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 3.12rem;
+    font-size: 4.16rem;
     text-align: center;
   }
 }
@@ -216,7 +225,7 @@ h2 {
 }
 @media screen and (max-width: 576px) {
   h2 {
-    font-size: 2.64rem;
+    font-size: 3.52rem;
     text-align: center;
   }
 }
@@ -231,7 +240,7 @@ h3 {
 }
 @media screen and (max-width: 576px) {
   h3 {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     text-align: center;
   }
 }
@@ -246,7 +255,7 @@ h4 {
 }
 @media screen and (max-width: 576px) {
   h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
   }
 }
@@ -261,7 +270,7 @@ h5 {
 }
 @media screen and (max-width: 576px) {
   h5 {
-    font-size: 0.96rem;
+    font-size: 1.28rem;
     text-align: center;
   }
 }
@@ -276,7 +285,7 @@ h6 {
 }
 @media screen and (max-width: 576px) {
   h6 {
-    font-size: 0.84rem;
+    font-size: 1.12rem;
     text-align: center;
   }
 }
@@ -311,10 +320,10 @@ h6 {
   background-color: #334f43;
 }
 .bg-verde-agua {
-  background-color: #80bfaa;
+  background-color: #57c5b0;
 }
 .bg-verde-texto {
-  background-color: #509c7f;
+  background-color: #009c7f;
 }
 .bg-verde-claro {
   background-color: #81bfaa;
@@ -336,10 +345,10 @@ footer {
   color: #334f43;
 }
 .text-verde-agua {
-  color: #80bfaa;
+  color: #57c5b0;
 }
 .text-verde-texto {
-  color: #509c7f;
+  color: #009c7f;
 }
 .text-verde-claro {
   color: #81bfaa;
@@ -349,6 +358,14 @@ body {
   font-family: 'Titillium Web', sans-serif;
   color: #767676;
   overflow-x: hidden;
+}
+a {
+  color: #009c7f;
+  text-decoration: none;
+}
+a:hover {
+  color: #009c7f;
+  text-decoration: none;
 }
 blockquote {
   border-left: 5px solid;
@@ -1049,6 +1066,7 @@ header {
   top: 34%;
   position: absolute;
   z-index: 2;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   header {
@@ -1085,19 +1103,20 @@ header {
   }
 }
 .slick-dots {
-  margin-top: -2.4rem;
-  position: unset;
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
 }
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
 .slick-dots li button:before {
   font-size: 12px;
-  color: #509c7f;
+  color: #009c7f;
 }
 .slick-dots li.slick-active button:before {
   font-size: 12px;
-  color: #509c7f;
+  color: #009c7f;
   opacity: 1;
 }
 #banner-container {
@@ -1117,7 +1136,7 @@ header {
 }
 .esteticista {
   text-align: left;
-  border-left: 1px solid #509c7f;
+  border-left: 1px solid #009c7f;
 }
 .esteticista-container > * {
   -ms-flex-item-align: center;
@@ -1133,6 +1152,9 @@ header {
 .funcao {
   line-height: 1rem;
   font-size: 1.2rem;
+}
+.blog-img-prod {
+  margin-top: 8px;
 }
 .icon-acoes {
   max-width: 50px;
@@ -1360,13 +1382,13 @@ header {
   content: '•';
   text-align: center;
   opacity: 1;
-  color: #509c7f;
+  color: #009c7f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .estec-docs li.slick-active button:before {
   opacity: 0.75;
-  color: #509c7f;
+  color: #009c7f;
 }
 .icone-da-lista {
   list-style: url("../img/icone-da-lista.png");
@@ -1404,6 +1426,9 @@ header {
 .espacamento {
   padding: 10px;
 }
+.banner-img-striort {
+  max-width: 100px;
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;
@@ -1424,6 +1449,13 @@ header {
     right: -10px;
   }
 }
+@media screen and (max-width: 1100px) {
+  .background-topo2 {
+    background-size: cover;
+    background-position: 60% 10%;
+    background-repeat: no-repeat;
+  }
+}
 @media screen and (max-width: 768px) {
   .curso-flex > * {
     width: 47%;
@@ -1435,7 +1467,7 @@ header {
   .esteticista {
     text-align: center;
     border-left: 0;
-    border-top: 1px solid #509c7f;
+    border-top: 1px solid #009c7f;
     margin-top: 20px;
     padding-top: 20px;
   }
@@ -1471,6 +1503,11 @@ header {
   }
 }
 @media screen and (max-width: 576px) {
+  .background-topo2 {
+    background-size: 700px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
   .curso-flex > * {
     width: 100%;
     margin: 2px;
@@ -1494,7 +1531,27 @@ header {
     margin: auto;
   }
 }
+@media screen and (max-width: 480px) {
+  .banner-title-striort {
+    font-size: 2.4rem;
+    margin-top: 5px;
+  }
+  .banner-img-striort {
+    max-width: 40px;
+    margin-top: -20px;
+  }
+  .background-topo2 {
+    background-size: 900px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
 @media screen and (max-width: 390px) {
+  .background-topo2 {
+    background-size: 650px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
   .background-topo {
     background-position: 44%;
   }
@@ -1513,12 +1570,11 @@ header {
 .ir-topo {
   width: 50px;
   height: 50px;
-  background-color: #fff;
+  background-color: #d2ffdf;
   position: fixed;
   bottom: 10px;
   right: 10px;
   z-index: 999;
-  box-shadow: 2px 2px 1px #d3d3d3;
 }
 .seta {
   padding-top: 5px;
@@ -1530,7 +1586,7 @@ footer {
   padding: 60px 0 0px 0px;
 }
 .logo-biz {
-  background-color: #407d66;
+  background-color: #007d66;
   width: 100%;
   padding: 10px 0;
   margin-top: 50px;
@@ -1651,11 +1707,11 @@ footer .logo-footer {
   transition: 0.3s;
 }
 .display-menu-mob li a:hover {
-  color: #509c7f;
+  color: #009c7f;
   font-weight: bold;
 }
 .display-menu-mob li a.ativo {
-  color: #509c7f;
+  color: #009c7f;
   font-weight: bold;
 }
 .display-menu {
@@ -1680,11 +1736,11 @@ footer .logo-footer {
   transition: 0.3s;
 }
 .display-menu li a:hover {
-  color: #80bfaa;
+  color: #57c5b0;
   font-weight: bold;
 }
 .display-menu li a.ativo {
-  color: ;
+  color: #009c7f;
   font-weight: bold;
 }
 .menu-mob {
@@ -1700,7 +1756,14 @@ footer .logo-footer {
 }
 @media screen and (max-width: 768px) {
   .display-menu li {
-    margin-right: 25px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .display-menu li {
+    margin-right: 15px;
+    font-size: 14px;
   }
 }
 @-webkit-keyframes rotacao {

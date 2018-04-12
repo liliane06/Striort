@@ -1068,6 +1068,15 @@ header {
   z-index: 2;
   cursor: pointer;
 }
+.blackPop {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+}
 @media screen and (max-width: 768px) {
   header {
     height: auto;

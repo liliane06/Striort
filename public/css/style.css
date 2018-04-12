@@ -1094,7 +1094,7 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   max-height: 40%;
-  overflow: scroll;
+  overflow: auto;
 }
 .popUp {
   background-color: #009c7f;

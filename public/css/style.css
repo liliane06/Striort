@@ -1084,17 +1084,31 @@ header {
   height: 100%;
   z-index: 9999999;
 }
+.flex-popUp {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-height: 40%;
+  overflow: scroll;
+}
 .popUp {
   background-color: #009c7f;
-  width: 90%;
+  width: 60%;
   position: relative;
-  max-width: 340px;
+  min-width: 300px;
   padding: 30px;
+  background-image: url("../img/back-stri.jpg");
+  background-repeat: y;
   color: #fff;
   text-align: center;
 }
 .popUp img {
-  max-width: 80px;
+  max-width: 100px;
   margin: auto;
   margin-top: -40px;
 }
@@ -1107,7 +1121,7 @@ header {
   border-radius: 50;
 }
 .agenda-item {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .agenda-item p {
   margin: 0;
@@ -1118,7 +1132,8 @@ header {
   background-color: #334f43;
 }
 .agenda-item p.cidade {
-  background-color: #fff;
+  color: #fff;
+  margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
   header {

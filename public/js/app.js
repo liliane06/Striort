@@ -169,6 +169,7 @@
     window.addEventListener('load', function(){
         $('#loader').fadeOut(200);
         maxHeightScreenMinus($(".c-banner"));
+        $('.flex-popUp').height(window.innerHeight * .5)
     })
 
     $('.container-curriculo').on('click', function(){

@@ -155,6 +155,16 @@
         $('#menu-mob-flutuante').fadeOut(200);
     })
 
+    $('.fechar-agenda').on('click', function(){
+        $('#agemdaPop').fadeOut(200);
+    });
+
+    $('#abrirAgenda').on('click', function(){
+        $('#agemdaPop').fadeIn(200);
+    });
+
+    
+
     //esse evento acontece quando toda a página é carregada
     window.addEventListener('load', function(){
         $('#loader').fadeOut(200);

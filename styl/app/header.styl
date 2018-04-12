@@ -51,6 +51,42 @@ header
 	width: 100%
 	height 100%
 	z-index 9999999
+	@extends .align-center
+		
+
+.popUp
+	background-color: $colors['verde-texto']
+	width: 90%
+	position relative
+	max-width 340px
+	padding 30px
+	color white
+	text-align: center
+	img
+		max-width: 80px
+		margin auto
+		margin-top -40px
+	.fechar-agenda
+		cursor pointer
+		position: absolute
+		top 20px
+		margin-top 0
+		right -10px
+		border-radius: 50
+
+.agenda-item
+	margin-top 10px
+	p
+		margin 0
+	p.data
+		padding 10px
+		display: inline
+		background-color: $colors['verde']
+	p.cidade 
+		background-color: $colors['inverse']
+
+			
+
 
 @media screen and (max-width: $queries['medium'])
 	header

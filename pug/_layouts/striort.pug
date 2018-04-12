@@ -15,8 +15,15 @@ html(lang="pt")
     body
         #agemdaPop
             .blackPop
-                .popUp
-
+                .popUp.clearfix
+                    img.img-responsive.block-center(src="img/agenda-placa.png", alt="")
+                    .flex-popUp
+                        .popUpItem
+                            .agenda-item
+                                p.data 14/04/2018
+                                p.cidade Porto Velho - RO
+                    .fechar-agenda
+                        img.img-responsive.block-center(src="img/fechar-agenda.png", alt="")
         #loader
             img.loader-img.img-responsive(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/Icon/Icon+72.png", alt="Lodder")
         .ir-topo#ir-topo(style="display:none")

@@ -56,6 +56,7 @@ html {
 .align-center,
 .col-same-height,
 .display-Flex,
+.blackPop,
 .esteticista-container,
 .esteticista-social {
   display: -webkit-box;
@@ -64,6 +65,7 @@ html {
 }
 .align-center,
 .col-same-height,
+.blackPop,
 .esteticista-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -71,10 +73,15 @@ html {
 }
 .align-center > *,
 .col-same-height > *,
+.blackPop > *,
 .esteticista-container > * {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+.wrap-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .col-same-height > * {
   -ms-flex-item-align: center;
@@ -1077,6 +1084,42 @@ header {
   height: 100%;
   z-index: 9999999;
 }
+.popUp {
+  background-color: #009c7f;
+  width: 90%;
+  position: relative;
+  max-width: 340px;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+}
+.popUp img {
+  max-width: 80px;
+  margin: auto;
+  margin-top: -40px;
+}
+.popUp .fechar-agenda {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  margin-top: 0;
+  right: -10px;
+  border-radius: 50;
+}
+.agenda-item {
+  margin-top: 10px;
+}
+.agenda-item p {
+  margin: 0;
+}
+.agenda-item p.data {
+  padding: 10px;
+  display: inline;
+  background-color: #334f43;
+}
+.agenda-item p.cidade {
+  background-color: #fff;
+}
 @media screen and (max-width: 768px) {
   header {
     height: auto;
@@ -1404,6 +1447,7 @@ header {
 }
 .curriculo {
   margin-top: 20px;
+  padding: 0;
 }
 .curriculo li {
   padding: 10px;
@@ -1512,6 +1556,12 @@ header {
   }
 }
 @media screen and (max-width: 576px) {
+  #curso {
+    background-image: url("../img/background-mulher-striort.jpg");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 300px;
+  }
   .background-topo2 {
     background-size: 700px;
     background-position: bottom;
@@ -1809,6 +1859,26 @@ footer .logo-footer {
   }
   to {
     opacity: 0.3;
+  }
+}
+@-webkit-keyframes scalar {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scalar {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 #loader {

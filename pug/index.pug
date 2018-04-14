@@ -13,23 +13,7 @@ block content
             .row
                 #banner   
                     // Banners rotativos                
-                    .c-banner.background-topo2
-                        .item-c.centralizar.texto-banner-gravida
-                            .col-xs-12.col-sm-5.col-md-7
-                                .texto-banner
-                                    img(src="img/borboleta.png", alt="Icone Striort", class="center-block banner-img-striort")
-                                    h2.text-verde-agua.text-uppercase.text-center.banner-title-striort  Cuide das estrias dela, <br>
-                                        span.linha-meio|e ela cuida do que é <br/>
-                                        | realmente importante    
-                    .c-banner.background-topo
-                        .centralizar
-                            .banner-especialistas.col-xs-12
-                                h4.text-verde-agua.pd-40-bottom.text-center Especialitas em 
-                                    span.text-verde-texto estrias
-                                .centralizar-interno
-                                    h2.h1-banner.text-verde-agua.light Antes
-                                    img.icone-striort(src="img/Logo-striort.png", alt="Logo Striort")
-                                    h2.h1-banner.text-verde-agua.light Depois      
+                    include ./_partials/_index/_banners.pug
 
     // esteticiscas carrocel
     section.bg-verde.section#resultados

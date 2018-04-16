@@ -9,7 +9,7 @@ button
 	border-radius $btn-boder-radius
 	padding 10px 40px
 	border 1px solid $colors['oceano']
-	color: $colors['oceano']
+	color: $colors['inverse']
 	background-color:$btn-bg 
 	transition color 1s, box-shadow 1s
 	&:hover
@@ -24,12 +24,15 @@ button
 		color: $btn-text
 .btn-default
 	background-color: $btn-bg
-	color: $btn-text;
+	color: $colors['inverse'];
 	border 1px solid $btn-text
 	&:hover
 		background-color: $btn-bg
-		color: $btn-text;
+		color: $colors['inverse'];
 		border 1px solid $btn-text
+	&:focus
+		background-color: $btn-bg
+		color: $colors['inverse'];
 .btn-danger
 .btn-success
 .btn-warning

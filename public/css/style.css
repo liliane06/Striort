@@ -484,12 +484,12 @@ button {
   padding: 10px 40px;
 }
 .btn border 1px solid $colors['oceano'],
-.btn color: $colors['oceano'],
+.btn color: $colors['inverse'],
 .btn background-color:$btn-bg,
 .btn transition color 1s,
 .btn box-shadow 1s,
 .btn:hover {
-  background-color: transparent;
+  background-color: #009c7f;
   color: ;
   box-shadow: 2px 0px 8px #f9f9f9;
 }
@@ -498,18 +498,22 @@ button {
   color: ;
 }
 .btn:active {
-  background-color: transparent;
+  background-color: #009c7f;
   color: ;
 }
 .btn-default {
-  background-color: transparent;
-  color: ;
+  background-color: #009c7f;
+  color: #fff;
   border: 1px solid;
 }
 .btn-default:hover {
-  background-color: transparent;
-  color: ;
+  background-color: #009c7f;
+  color: #fff;
   border: 1px solid;
+}
+.btn-default:focus {
+  background-color: #009c7f;
+  color: #fff;
 }
 .btn-danger,
 .btn-success,
@@ -1359,7 +1363,7 @@ header {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
-.80 {
+._80 {
   font-size: 5rem;
 }
 .curso-flex {
@@ -1528,59 +1532,66 @@ header {
   }
 }
 @media screen and (max-width: 1100px) {
-  .background-topo2 {
-    background-size: cover;
-    background-position: 60% 10%;
-    background-repeat: no-repeat;
+  .background-leort {
+    background-size: auto;
+    background-position: 130% center;
   }
 }
 @media screen and (max-width: 768px) {
-  .curso-flex > * {
-    width: 47%;
-    margin: 2px;
-  }
-  .80 {
-    font-size: 4.5rem;
-  }
-  .esteticista {
-    text-align: center;
-    border-left: 0;
-    border-top: 1px solid #009c7f;
-    margin-top: 20px;
-    padding-top: 20px;
-  }
-  .esteticista-social {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .icone-striort {
-    max-width: 140px;
-  }
-  footer .container div {
-    margin-top: 20px;
-  }
-  .texto-banner-gravida {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .texto-banner-gravida > div {
-    margin-left: 0;
-  }
-  .esteticista-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .esteticista-container > * {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+  .background-leort {
+    background-size: auto;
+    background-position: 100px 90%;
   }
 }
+.curso-flex > * {
+  width: 47%;
+  margin: 2px;
+}
+._80 {
+  font-size: 4.5rem;
+}
+.esteticista {
+  text-align: center;
+  border-left: 0;
+  border-top: 1px solid #009c7f;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.esteticista-social {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.icone-striort {
+  max-width: 140px;
+}
+footer .container div {
+  margin-top: 20px;
+}
+.texto-banner-gravida {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.texto-banner-gravida > div {
+  margin-left: 0;
+}
+.esteticista-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.esteticista-container > * {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 @media screen and (max-width: 576px) {
+  .background-leort {
+    background-size: 400px;
+    background-position: 100px 90%;
+  }
   .h1-banner {
     font-weight: 500;
   }
@@ -1620,10 +1631,10 @@ header {
 }
 @media screen and (max-width: 480px) {
   .background-leort {
-    background-image: url("../img/leort-solo.png"), url("../img/leort-backgound.jpg");
-    background-size: 120px, cover;
+    background-image: url("../img/leort-solo.png");
+    background-size: 430px, cover;
     background-repeat: no-repeat;
-    background-position: 90% 80%, 85% 90%;
+    background-position: 70px 60%;
   }
   .banner-title-striort {
     font-size: 2.4rem;
@@ -1658,6 +1669,22 @@ header {
     bottom: -20px;
     max-width: 420px;
     left: -120px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .background-leort {
+    background-image: url("../img/leort-solo.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 80px 70%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .background-leort {
+    background-image: url("../img/leort-solo.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 40px 70%;
   }
 }
 .ir-topo {

@@ -163,6 +163,14 @@
     & > .oneLine
             width: 100% 
 
+.cursos-flex
+    display: flex
+    flex-wrap: wrap
+    & > *
+        width: 25%
+        border 1px solid white
+        flex-grow: 1
+
 .striort-conheca
     .striort-title
         h4
@@ -311,6 +319,15 @@
     background-position: 70% 90%
     background-color: #fbfbfb
 
+.titulo-comentario
+    padding: 50px
+    text-align: center
+
+.borda-outros-cursos
+    p
+        padding: 15px
+        text-align: center
+
 @media screen and (max-width: $queries['large'])
     .leort-image-text
         padding-top 20px
@@ -340,6 +357,7 @@
         & > *
             width: 47%
             margin 2px
+    
     ._80
         font-size: remify(45px)
     .esteticista
@@ -386,6 +404,12 @@
         & > *
             width: 100%
             margin 2px
+    
+    .cursos-flex
+        & > *
+            width: 47%
+            margin 2px
+
     .leort-desc
         margin-top 40px
     .item-c

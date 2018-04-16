@@ -35,26 +35,17 @@ block content
     section#prof.section
         include ./_partials/_index/_prof.pug
         
-
+    //agenda
     section#agenda.bg-verde-texto.section
-        .container
-            .row
-                .col-sm-12
-                    h2.text-inverse.text-center.pd-60-bottom.text-uppercase CLIQUE E CONFIRA NOSSA AGENDA Striort®
-                    #abrirAgenda(href="/")
-                        img.img-responsive.center-block(src="img/agenda.png", alt="Agenda Striort")
+        include ./_partials/_index/_agenda.pug
 
     // Midia
     section#na-midia
         include ./_partials/_index/_midia.pug
 
-
-
     // depoimentos 
-    section#depoimentos.section.back-acoes
+    section#depoimentos.section.back-acoes(style="background-color:#f4f8f9")
         include ./_partials/_index/_depoimentos.pug
-
-
 
     // outros cursos
     section#outrosCursos

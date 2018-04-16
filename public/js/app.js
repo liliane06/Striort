@@ -44,7 +44,45 @@
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '#bannerDep',
-        dots: true,
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',
+        nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]       
+    });
+
+    $('#agenda-c').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
         centerMode: true,
         focusOnSelect: true,
         prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',

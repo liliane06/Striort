@@ -80,13 +80,13 @@
     });
 
     $('#agenda-c').slick({
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         dots: false,
         centerMode: true,
         focusOnSelect: true,
-        prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',
-        nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>',
+        prevArrow: '<img src="/img/arrow-br.png" class="arrow" alt="Esquerda"/>',
+        nextArrow: '<img src="/img/arrow-br.png" class="arrow arrow-right" alt="Esquerda"/>',
         responsive: [
             {
               breakpoint: 1024,
@@ -241,11 +241,15 @@
         $('#agemdaPop').fadeOut(200);
     });
 
-    $('#abrirAgenda').on('click', function(){
+    $('#abrirAgenda, .abrirAgenda').on('click', function(){
         $('#agemdaPop').fadeIn(200);
     });
 
     
+    $('.abrirIncs').on('click', function(){
+        var container = $(this).parents('.agenda-item');
+        $(container).children('.con-inscricao').slideToggle();
+    })
 
     //esse evento acontece quando toda a página é carregada
     window.addEventListener('load', function(){

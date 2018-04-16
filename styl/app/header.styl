@@ -60,6 +60,8 @@ header
 	justify-content: space-around
 	max-height: 40%
 	overflow: auto
+	& > *
+		width: 33%
 
 .popUp
 	background-color: $colors['verde-texto']
@@ -68,7 +70,8 @@ header
 	min-width 300px
 	padding 30px
 	background-image: url('../img/back-stri.jpg')
-	background-repeat: y
+	background-repeat: no-repeat
+	background-size: 3px 100%;
 	color white
 	text-align: center
 	img
@@ -99,6 +102,9 @@ header
 
 
 @media screen and (max-width: $queries['medium'])
+	.flex-popUp
+		& > *
+			width: 100%
 	header
 		height: auto
 		background-repeat: repeat-x
@@ -113,6 +119,9 @@ header
 
 
 @media screen and (max-width: $queries['small'])
+	.flex-popUp
+		& > *
+			width: 100%
 	.rede-sociais-insta
 	.rede-sociais-face
 		margin: auto

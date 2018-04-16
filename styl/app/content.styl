@@ -159,6 +159,7 @@
     & > *
         width: 33.33333%
         border 1px solid white
+        flex-grow: 1
     & > .oneLine
             width: 100% 
 
@@ -303,6 +304,13 @@
 .banner-img-striort
     max-width: 100px
 
+.background-leort
+    background-image: url('../img/leort-solo.png')
+    background-size: auto
+    background-repeat: no-repeat;
+    background-position: 70% 90%
+    background-color: #fbfbfb
+
 @media screen and (max-width: $queries['large'])
     .leort-image-text
         padding-top 20px
@@ -357,6 +365,8 @@
 
 
 @media screen and (max-width: $queries['small'])
+    .h1-banner
+        font-weight: 500
     #curso
         background-image: url(../img/background-mulher-striort.jpg)
         background-position: center right
@@ -388,6 +398,11 @@
                 margin: auto
 
 @media screen and (max-width: 480px)
+    .background-leort
+        background-image: url('../img/leort-solo.png'), url('../img/leort-backgound.jpg')
+        background-size: 120px, cover
+        background-repeat: no-repeat;
+        background-position: 90% 80%, 85% 90%
     .banner-title-striort
         font-size: remify(24px)
         margin-top: 5px

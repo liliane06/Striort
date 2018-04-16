@@ -547,6 +547,12 @@ button {
 .btn-warning:hover {
   background-color: #bc7510;
 }
+@media screen and (max-width: 480px) {
+  .btn {
+    border-radius: 0px;
+    padding: 10px 20px;
+  }
+}
 .pd-20 {
   padding: 20px;
 }
@@ -1701,6 +1707,9 @@ footer .container div {
   }
 }
 @media screen and (max-width: 480px) {
+  .cursos-flex > * {
+    width: 100%;
+  }
   .background-leort {
     background-image: url("../img/leort-solo.png");
     background-size: 430px, cover;

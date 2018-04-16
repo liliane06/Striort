@@ -69,8 +69,8 @@
             {
               breakpoint: 480,
               settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 2
               }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -137,8 +137,8 @@
         fade: true,
         arrows: true,
         cssEase: 'linear',
-        prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',
-        nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>'
+        prevArrow: '<img src="./img/arrow.png" class="arrow" alt="Esquerda"/>',
+        nextArrow: '<img src="./img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>'
       });
     
       $('#cuidadoras').slick({
@@ -149,8 +149,8 @@
         fade: true,
         arrows: true,
         cssEase: 'linear',
-        prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',
-        nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>'
+        prevArrow: '<img src="./img/arrow.png" class="arrow" alt="Esquerda"/>',
+        nextArrow: '<img src="./img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>'
       });
 
 
@@ -161,8 +161,8 @@
         dotsClass: "estec-docs",
         slidesToShow: 2,
         slidesToScroll: 2,
-        prevArrow: '<img src="/img/arrow.png" class="arrow" alt="Esquerda"/>',
-        nextArrow: '<img src="/img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>',
+        prevArrow: '<img src="./img/arrow.png" class="arrow" alt="Esquerda"/>',
+        nextArrow: '<img src="./img/arrow.png" class="arrow arrow-right" alt="Esquerda"/>',
         responsive: [
           {
             breakpoint: 1024,
@@ -255,12 +255,12 @@
     window.addEventListener('load', function(){
         $('#loader').fadeOut(200);
         maxHeightScreenMinus($(".c-banner"));
-        $('.flex-popUp').height(window.innerHeight * .5)
+        $('.flex-popUp').height((window.innerHeight * .4) - 30)
     });
 
     window.addEventListener('resize', function(){
         maxHeightScreenMinus($(".c-banner"));
-        $('.flex-popUp').height(window.innerHeight * .5)
+        $('.flex-popUp').height((window.innerHeight * .4) - 30)
     })
 
     $('.container-curriculo').on('click', function(){

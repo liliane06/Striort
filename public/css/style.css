@@ -1075,6 +1075,9 @@ header .rede-sociais {
 .logo-container {
   padding: 15px 0;
 }
+img.logo {
+  max-width: 97px;
+}
 .rede-sociais {
   padding-right: 10px;
   display: -webkit-box;
@@ -1604,10 +1607,26 @@ header {
     right: -10px;
   }
 }
+@media screen and (max-width: 1440px) {
+  .background-leort {
+    background-size: 700px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .background-leort {
+    background-size: 650px;
+    background-position: 80% 90%;
+  }
+}
 @media screen and (max-width: 1100px) {
   .background-leort {
     background-size: auto;
     background-position: 130% center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .background-leort {
+    background-position: 120px 60%;
   }
 }
 @media screen and (max-width: 768px) {

@@ -1086,6 +1086,9 @@ img.logo {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.rede-sociais img {
+  width: 35px;
+}
 header {
   background-color: rgba(255,255,255,0.9);
 }
@@ -1174,8 +1177,19 @@ header {
   header .rede-sociais {
     text-align: right;
   }
+  header .rede-sociais img {
+    width: 45px;
+  }
   .logo-leort {
     text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .rede-sociais {
+    text-align: right;
+  }
+  .rede-sociais img {
+    width: 45px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1188,6 +1202,9 @@ header {
     max-width: 30px;
     display: block;
   }
+  .rede-sociais img {
+    max-width: 35px;
+  }
 }
 @media screen and (max-width: 478px) {
   .rede-sociais {
@@ -1196,7 +1213,7 @@ header {
         flex-wrap: wrap;
   }
   .rede-sociais img {
-    max-width: 25px;
+    max-width: 35px;
   }
 }
 .slick-dots {

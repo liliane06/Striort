@@ -1314,7 +1314,8 @@ header {
 .background-cover,
 .background-topo,
 .background-topo2,
-#agenda {
+#agenda,
+.background-diamond {
   background-size: cover;
   background-position: center center;
 }
@@ -1594,7 +1595,13 @@ header {
   text-align: center;
 }
 .background-diamond {
-  background-color: #357782;
+  background-image: url("../img/bg-diamond.jpg");
+}
+.background-diamond p,
+.background-diamond h3,
+.background-diamond h2,
+.background-diamond h4 {
+  color: #2e6f7c;
 }
 @media screen and (max-width: 992px) {
   .leort-image-text {

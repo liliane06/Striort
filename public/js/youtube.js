@@ -12,7 +12,7 @@
             new YT.Player('player1', {
                 height: '360',
                 width: '640',
-                videoId: 'Kxx6PmyuBXw',
+                videoId: 'SQ1uGyx8OYE',
                 events: {
                   'onReady': onPlayerReady,
                   'onStateChange': onPlayerStateChange
@@ -24,7 +24,7 @@
             new YT.Player('player2', {
                 height: '360',
                 width: '640',
-                videoId: 'vnxaNXvtfCo',
+                videoId: 'HJrnHYDr_tM',
                 events: {
                   'onReady': onPlayerReady,
                   'onStateChange': onPlayerStateChange
@@ -36,7 +36,7 @@
             new YT.Player('player3', {
                 height: '360',
                 width: '640',
-                videoId: '_kT0y8W3WP8',
+                videoId: '9zyzEGrzYEY',
                 events: {
                   'onReady': onPlayerReady,
                   'onStateChange': onPlayerStateChange
@@ -48,19 +48,7 @@
             new YT.Player('player4', {
                 height: '360',
                 width: '640',
-                videoId: 'AqZwrJkcy6I',
-                events: {
-                  'onReady': onPlayerReady,
-                  'onStateChange': onPlayerStateChange
-                }
-            })
-        );
-
-        players.push(
-            new YT.Player('player5', {
-                height: '360',
-                width: '640',
-                videoId: 'H7cj3neqTjg',
+                videoId: 'uWOLUV6L64c',
                 events: {
                   'onReady': onPlayerReady,
                   'onStateChange': onPlayerStateChange

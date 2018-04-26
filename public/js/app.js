@@ -200,7 +200,6 @@
 
 
     $('.goesTo, .link-footer').on('click', function (event) {
-        console.log(this);
         var $anchor = $(this);
 
         $('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top }, 1000, 'swing');

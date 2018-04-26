@@ -1319,7 +1319,7 @@ header {
   background-position: center center;
 }
 .background-topo {
-  background-image: url("../img/striort-background-topo.jpg");
+  background-image: url("../img/banner-instagram.png");
 }
 .background-topo2 {
   background-image: url("../img/background-gravida-striort.jpg");
@@ -1638,11 +1638,23 @@ header {
     background-position: 120px 60%;
   }
 }
+.background-topo {
+  background-image: url("../img/texto-banner-instagram.png");
+  background-size: 350px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
 @media screen and (max-width: 768px) {
   .background-leort {
     background-size: auto;
     background-position: 100px 90%;
   }
+}
+.background-topo {
+  background-image: url("../img/texto-banner-instagram.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 .curso-flex > * {
   width: 47%;
@@ -1693,6 +1705,12 @@ footer .container div {
     background-size: 400px;
     background-position: 100px 90%;
   }
+  .background-topo {
+    background-image: url("../img/texto-banner-instagram.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
   .h1-banner {
     font-weight: 500;
   }
@@ -1738,6 +1756,12 @@ footer .container div {
   .cursos-flex > * {
     width: 100%;
   }
+  .background-topo {
+    background-image: url("../img/texto-banner-instagram.png");
+    background-size: 290px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
   .background-leort {
     background-image: url("../img/leort-solo.png");
     background-size: 430px, cover;
@@ -1778,6 +1802,12 @@ footer .container div {
     max-width: 420px;
     left: -120px;
   }
+  .background-topo {
+    background-image: url("../img/texto-banner-instagram.png");
+    background-size: 550px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
 }
 @media screen and (max-width: 390px) {
   .background-leort {
@@ -1786,6 +1816,12 @@ footer .container div {
     background-repeat: no-repeat;
     background-position: 80px 70%;
   }
+  .background-topo {
+    background-image: url("../img/texto-banner-instagram.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
 }
 @media screen and (max-width: 340px) {
   .background-leort {
@@ -1793,6 +1829,12 @@ footer .container div {
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: 40px 70%;
+  }
+  .background-topo {
+    background-image: url("../img/texto-banner-instagram.png");
+    background-size: 215px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
   }
 }
 .ir-topo {

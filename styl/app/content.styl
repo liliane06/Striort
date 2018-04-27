@@ -92,13 +92,10 @@
     background-size: cover
     background-position: center center
 .background-topo
-    background-image: url(../img/banner-instagram.png)
+    background-image: url(../img/img-insta.jpg)
     @extends .background-cover
 
 
-.background-topo2
-    background-image: url(../img/background-gravida-striort.jpg)
-    @extends .background-cover
 
 
 #curso
@@ -201,6 +198,12 @@
         margin-top 20px
         p
             margin 0
+
+.background-instagram
+    background-image: url(../img/img-insta.jpg)
+    background-repeat: no-repeat
+    background-size: auto
+    background-position: bottom center
 
 .striort-conheca
     .striort-title
@@ -389,19 +392,34 @@
     .background-leort
         background-size: 650px
         background-position: 80% 90%
+    .background-instagram
+        background-image: url(../img/img-insta.jpg)
+
+
+@media screen and (max-width: 1024px)
+    .background-instagram
+        background-size: 1000px
 
 @media screen and (max-width: 1100px)
-     .background-leort
-        background-size: auto
-        background-position: 130% center 
+    .background-leort
+        background-size: 650px
+        background-position: 80% 90%
+    .background-instagram
+        background-size: 900px
+
+
+@media screen and (max-width: 833px)
+    .background-instagram
+        background-image: url(../img/img-insta-mob.jpg)
+        background-size: 400px
+
+
 
 @media screen and (max-width: 900px)
      .background-leort
-        background-position: 120px 60%  
-    
+        background-position: 120px 60%      
     .background-topo
-        background-image: url(../img/texto-banner-instagram.png)
-        background-size: 350px
+        background-image: url(../img/img-insta.jpg)
         background-repeat: no-repeat
         background-position-y: bottom
 
@@ -410,12 +428,6 @@
      .background-leort
         background-size: auto
         background-position: 100px 90%  
-
-    .background-topo
-        background-image: url(../img/texto-banner-instagram.png)
-        background-size: 300px
-        background-repeat: no-repeat
-        background-position-y: bottom
      
     .curso-flex
         & > *
@@ -502,6 +514,9 @@
     .cursos-flex
         & > *
             width: 100%
+    .background-instagram
+        background-image: url(../img/img-insta-mob.jpg)
+        background-size: 300px
     
     .background-topo
         background-image: url(../img/texto-banner-instagram.png)
@@ -524,6 +539,8 @@
         background-size: 900px;
         background-position bottom 
         background-repeat: no-repeat;
+    .background-instagram
+        background-size: 280px
 
 @media screen and (max-width: 390px)
     .background-topo2
@@ -532,6 +549,9 @@
         background-repeat: no-repeat;
     .background-topo
         background-position: 44%
+    .background-instagram
+        background-image: url(../img/img-insta-mob.jpg)
+        background-size: 250px
     .h1-banner
         font-size: 20px
     .icone-striort
@@ -572,3 +592,6 @@
         background-size: 215px
         background-repeat: no-repeat
         background-position-y: bottom
+    .background-instagram
+        background-image: url(../img/img-insta-mob.jpg)
+        background-size: 200px

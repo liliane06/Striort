@@ -19,12 +19,12 @@
                 }
             })
         );
-
+        
         players.push(
             new YT.Player('player2', {
                 height: '360',
                 width: '640',
-                videoId: 'HJrnHYDr_tM',
+                videoId: 'wSepch5_Wbs',
                 events: {
                   'onReady': onPlayerReady,
                   'onStateChange': onPlayerStateChange
@@ -36,10 +36,10 @@
             new YT.Player('player3', {
                 height: '360',
                 width: '640',
-                videoId: '9zyzEGrzYEY',
+                videoId: 'ZaFzhbfPOnI',
                 events: {
-                  'onReady': onPlayerReady,
-                  'onStateChange': onPlayerStateChange
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
                 }
             })
         );
@@ -55,9 +55,20 @@
                 }
             })
         );
-        
-      }
 
+        players.push(
+            new YT.Player('player5', {
+                height: '360',
+                width: '640',
+                videoId: 'QpT3nGXSbs0',
+                events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+                }
+            })
+        );
+        
+    }
 
       function onPlayerReady(event) {
         event.target.pauseVideo();

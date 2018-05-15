@@ -1314,7 +1314,8 @@ header {
 .background-cover,
 .background-topo,
 #agenda,
-.background-diamond {
+.background-diamond,
+.background-update-striort {
   background-size: cover;
   background-position: center center;
 }
@@ -1605,6 +1606,15 @@ header {
 .background-diamond h4 {
   color: #2e6f7c;
 }
+.background-update-striort {
+  background-image: url("../img/update-striort.png");
+  background-color: #118771;
+}
+.background-update-striort a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;
@@ -1807,6 +1817,19 @@ footer .container div {
   .background-instagram {
     background-size: 280px;
   }
+  .background-update-striort {
+    background-size: 1300px;
+    background-color: #107e6a;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
+  .background-update-striort {
+    background-image: url("../img/img-update-mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 400px;
+    background-color: #107e6a;
+  }
 }
 @media screen and (max-width: 390px) {
   .background-topo2 {
@@ -1852,6 +1875,13 @@ footer .container div {
     background-repeat: no-repeat;
     background-position-y: bottom;
   }
+  .background-update-striort {
+    background-image: url("../img/img-update-mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 400px;
+    background-color: #107e6a;
+  }
 }
 @media screen and (max-width: 360px) {
   .background-instagram {
@@ -1875,6 +1905,13 @@ footer .container div {
   .background-instagram {
     background-image: url("../img/img-insta-mob.jpg");
     background-size: 200px;
+  }
+  .background-update-striort {
+    background-image: url("../img/img-update-mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 350px;
+    background-color: #107e6a;
   }
 }
 .ir-topo {

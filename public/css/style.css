@@ -2118,6 +2118,10 @@ footer .logo-footer {
   border-radius: 3px;
   background-color: #334f43;
 }
+.teaser {
+  -webkit-animation: piscar-menu 1.5s infinite;
+          animation: piscar-menu 1.5s infinite;
+}
 @media screen and (max-width: 768px) {
   .display-menu li {
     margin-right: 20px;
@@ -2184,6 +2188,22 @@ footer .logo-footer {
   to {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+@-webkit-keyframes piscar-menu {
+  from {
+    color: #767676;
+  }
+  to {
+    color: #57c5b0;
+  }
+}
+@keyframes piscar-menu {
+  from {
+    color: #767676;
+  }
+  to {
+    color: #57c5b0;
   }
 }
 #loader {

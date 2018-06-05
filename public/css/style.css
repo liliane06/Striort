@@ -1322,6 +1322,14 @@ header {
 .background-topo {
   background-image: url("../img/img-insta.jpg");
 }
+.arrow-right {
+  right: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+._80 {
+  font-size: 5rem;
+}
 #curso {
   background-image: url("../img/background-mulher-striort.jpg");
   background-position: center right;

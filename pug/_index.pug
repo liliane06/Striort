@@ -1,9 +1,9 @@
 extends ./_layouts/striort.pug
 
 block append CSS
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
-    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"+ version)
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"+ version)
+    link(rel="stylesheet", href="css/style.css"+ version)
     
 
 block content
@@ -17,7 +17,7 @@ block content
                         .row.item-c.centralizar
                             .col-sm-5
                                 .texto-banner
-                                    img(src="img/borboleta.png", alt="Icone Striort", class="center-block")
+                                    img(src="img/borboleta.png"+ version, alt="Icone Striort", class="center-block")
                                     h1.text-verde-agua.text-uppercase.text-center  Cuide das estrias dela, <br>
                                         span.linha-meio|e ela cuida do que é <br>
                                         | realmente importante    
@@ -25,7 +25,7 @@ block content
                         .centralizar
                             .centralizar-interno.col-sm-12
                                 h1.h1-banner.text-verde-agua Antes
-                                img.icone-striort(src="img/Logo-striort.png", alt="Logo Striort")
+                                img.icone-striort(src="img/Logo-striort.png"+ version, alt="Logo Striort")
                                 h1.h1-banner.text-verde-agua Depois      
 
 

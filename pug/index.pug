@@ -1,9 +1,9 @@
 extends ./_layouts/striort.pug
 
 block append CSS
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
-    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"+ version)
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"+ version)
+    link(rel="stylesheet", href="css/style.css"+ version)
     
 
 block content
@@ -62,7 +62,7 @@ block content
 
 
 block append scriptsJS
-    script(src="js/app.js")
-    script(src="js/youtube.js")
+    script(src="js/app.js"+ version)
+    script(src="js/youtube.js"+ version)
 
 

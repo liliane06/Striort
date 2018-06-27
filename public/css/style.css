@@ -1121,6 +1121,7 @@ header {
 }
 .flex-popUp > * {
   width: 33%;
+  margin-bottom: 20px;
 }
 .popUp {
   background-color: #009c7f;
@@ -1727,9 +1728,6 @@ header {
 }
 .icone-striort {
   max-width: 140px;
-}
-footer .container div {
-  margin-top: 20px;
 }
 .texto-banner-gravida {
   -webkit-box-pack: start;

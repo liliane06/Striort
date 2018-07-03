@@ -98,8 +98,8 @@ gulp.task('default', ['stylus', 'stylusLib', 'pug'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
-			baseDir: "./public"
-        }
+			baseDir: "./public",
+		}
     });
     // add browserSync.reload to the tasks array to make
     // all browsers reload after tasks are complete.

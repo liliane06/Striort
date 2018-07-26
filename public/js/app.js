@@ -243,6 +243,10 @@
         $('#agemdaPop').fadeIn(200);
     });
 
+    $('.striort-conheca').on('click', '.abrirAgenda', function(){
+        $('#agemdaPop').fadeIn(200);
+    });
+
     
     $('.abrirIncs').on('click', function(){
         var container = $(this).parents('.agenda-item');

@@ -1628,16 +1628,23 @@ header {
   display: block;
 }
 .background-esteticista {
-  background-image: url("../img/zebra-lisa.png"), url("../img/banner-esteticista.png");
+  background-image: url("../img/banner-esteticista.png");
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 100px, contain;
-  background-position-x: 400px, right;
-  background-position-y: bottom, 0;
+  background-size: contain;
+  background-position-x: right;
+  background-position-y: 0;
   background-color: #d8d8d8;
 }
 .estec-docs {
   position: relative;
+}
+.lisa {
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }
 @media screen and (max-width: 992px) {
   .leort-image-text {
@@ -1673,7 +1680,10 @@ header {
     background-image: url("../img/img-insta.jpg");
   }
   .background-esteticista {
-    background-position-x: 200px, right;
+    background-position-x: right;
+  }
+  .lisa {
+    left: 150px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1681,7 +1691,10 @@ header {
     background-size: 1000px;
   }
   .background-esteticista {
-    background-position-x: 200px, 830px;
+    background-position-x: 830px;
+  }
+  .lisa {
+    left: 100px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -1693,7 +1706,7 @@ header {
     background-size: 900px;
   }
   .background-esteticista {
-    background-position-x: 200px, 830px;
+    background-position-x: 830px;
   }
 }
 @media screen and (max-width: 833px) {
@@ -1715,7 +1728,10 @@ header {
     background-color: #107e6a;
   }
   .background-esteticista {
-    background-position-x: 100px, 600px;
+    background-position-x: 600px;
+  }
+  .lisa {
+    left: 0;
   }
 }
 @media screen and (max-width: 900px) {
@@ -1730,8 +1746,12 @@ header {
 }
 @media screen and (max-width: 700px) {
   .background-esteticista {
-    background-position-x: left, 800px;
-    background-size: 70px, contain;
+    background-position-x: 800px;
+    background-size: contain;
+  }
+  .lisa {
+    left: 0;
+    width: 50px;
   }
 }
 @media screen and (max-width: 768px) {

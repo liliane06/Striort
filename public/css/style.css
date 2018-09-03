@@ -1627,6 +1627,18 @@ header {
   height: 100%;
   display: block;
 }
+.background-esteticista {
+  background-image: url("../img/zebra-lisa.png"), url("../img/banner-esteticista.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100px, contain;
+  background-position-x: 400px, right;
+  background-position-y: bottom, 0;
+  background-color: #d8d8d8;
+}
+.estec-docs {
+  position: relative;
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;
@@ -1660,10 +1672,16 @@ header {
   .background-instagram {
     background-image: url("../img/img-insta.jpg");
   }
+  .background-esteticista {
+    background-position-x: 200px, right;
+  }
 }
 @media screen and (max-width: 1024px) {
   .background-instagram {
     background-size: 1000px;
+  }
+  .background-esteticista {
+    background-position-x: 200px, 830px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -1673,6 +1691,9 @@ header {
   }
   .background-instagram {
     background-size: 900px;
+  }
+  .background-esteticista {
+    background-position-x: 200px, 830px;
   }
 }
 @media screen and (max-width: 833px) {
@@ -1693,6 +1714,9 @@ header {
     background-size: cover;
     background-color: #107e6a;
   }
+  .background-esteticista {
+    background-position-x: 100px, 600px;
+  }
 }
 @media screen and (max-width: 900px) {
   .background-leort {
@@ -1703,6 +1727,12 @@ header {
   background-image: url("../img/img-insta.jpg");
   background-repeat: no-repeat;
   background-position-y: bottom;
+}
+@media screen and (max-width: 700px) {
+  .background-esteticista {
+    background-position-x: left, 800px;
+    background-size: 70px, contain;
+  }
 }
 @media screen and (max-width: 768px) {
   .background-leort {

@@ -1628,10 +1628,10 @@ header {
   display: block;
 }
 .background-esteticista {
-  background-image: url("../img/banner-esteticista.png");
+  background-image: url("../img/banner-esteticista.png"), url("../img/fundo-esteticista.png");
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain, cover;
   background-position-x: right;
   background-position-y: 0;
   background-color: #d8d8d8;

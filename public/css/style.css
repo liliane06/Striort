@@ -1646,6 +1646,9 @@ header {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
+.texto-esteticista {
+  font-weight: normal;
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;

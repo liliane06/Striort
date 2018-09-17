@@ -17,6 +17,7 @@
                         '<div class="agenda-item" style="margin-bottom:30px">' +
                         '<p class="data" style="max-width: 200px; display: block; margin: auto; text-overflow: ellipsis; white-space: nowrap; overflow-x: hidden;" >' + el.dataInicial  + '</p>' +
                         '<p class="cidade">' + el.nomeLocalidade + '</p>' +
+                        '<p style="font-size:14px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">' + el.nomeTurma + '</p>' +
                         '<a style="color:white" href="' + el.linkInscricaoCurso  +  '"target="_blanck">Inscrição</a>' +
                       '</div>'                  
                     )

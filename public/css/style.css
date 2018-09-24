@@ -1118,6 +1118,8 @@ header {
       justify-content: space-around;
   max-height: 40%;
   overflow: auto;
+  border: 1px solid #03c7a3;
+  box-shadow: inset 3px 2px 3px 2px #028a71;
 }
 .flex-popUp > * {
   width: 33%;
@@ -1139,6 +1141,7 @@ header {
   max-width: 100px;
   margin: auto;
   margin-top: -40px;
+  margin-bottom: 15px;
 }
 .popUp .fechar-agenda {
   cursor: pointer;
@@ -1624,6 +1627,28 @@ header {
   height: 100%;
   display: block;
 }
+.background-esteticista {
+  background-image: url("../img/banner-esteticista.png"), url("../img/fundo-esteticista.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position-x: right;
+  background-position-y: 0;
+  background-color: #d8d8d8;
+}
+.estec-docs {
+  position: relative;
+}
+.lisa {
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+.texto-esteticista {
+  font-weight: normal;
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;
@@ -1657,10 +1682,22 @@ header {
   .background-instagram {
     background-image: url("../img/img-insta.jpg");
   }
+  .background-esteticista {
+    background-position-x: right;
+  }
+  .lisa {
+    left: 150px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .background-instagram {
     background-size: 1000px;
+  }
+  .background-esteticista {
+    background-position-x: 830px;
+  }
+  .lisa {
+    left: 100px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -1670,6 +1707,9 @@ header {
   }
   .background-instagram {
     background-size: 900px;
+  }
+  .background-esteticista {
+    background-position-x: 830px;
   }
 }
 @media screen and (max-width: 833px) {
@@ -1690,6 +1730,12 @@ header {
     background-size: cover;
     background-color: #107e6a;
   }
+  .background-esteticista {
+    background-position-x: 600px;
+  }
+  .lisa {
+    left: 0;
+  }
 }
 @media screen and (max-width: 900px) {
   .background-leort {
@@ -1700,6 +1746,16 @@ header {
   background-image: url("../img/img-insta.jpg");
   background-repeat: no-repeat;
   background-position-y: bottom;
+}
+@media screen and (max-width: 700px) {
+  .background-esteticista {
+    background-position-x: 800px;
+    background-size: contain;
+  }
+  .lisa {
+    left: 0;
+    width: 50px;
+  }
 }
 @media screen and (max-width: 768px) {
   .background-leort {

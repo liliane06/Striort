@@ -1649,6 +1649,20 @@ header {
 .texto-esteticista {
   font-weight: normal;
 }
+#spinner {
+  display: none;
+  margin: auto;
+  width: 50px;
+  padding-top: 25px;
+}
+.fundo-spinner {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  display: none;
+  border-radius: 10px;
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;

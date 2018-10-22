@@ -4,10 +4,31 @@
             h2.text-verde-texto.text-center.text-uppercase.pd-80-top.encontre-title  VOCÊ QUER FAZER O TRATAMENTO STRIORT?
             h4.text-center.pd-20-top ENCONTRE AQUI UMA PROFISSIONAL QUE ATENDA EM SUA REGIÃO
         .col-sm-6.col-sm-offset-1.pd-40-top.text-center
-            label.center-block.pd-40-top Clique na região
-            include ./_mapa.pug
+            #encontre
+                .tela(data-position="0")
+                    label.center-block.pd-40-top Clique na região
+                    include ./_mapa.pug
+                .tela(data-position="1")
+                    p.text-center.bold
+                        small Selecione o Estado
+                    ul#estados
+                    button.btn.btn-lg.voltarTela Voltar
+                .tela(data-position="2")
+                    p.text-center.bold
+                        small Selecione a Cidade
+                    ul#cidades
+                    button.btn.btn-lg.voltarTela Voltar
+                .tela(data-position="3")
+                    p.text-center.bold
+                        small Esteticistas
+                    ul#esteticistas
+                    button.btn.btn-lg.voltarTela Voltar
 .lisa(style="min-width: 70px;bottom: -3px")
     img.img-responsive( src="img/zebra-blinking.gif" alt="Mascote Lisa")
+
+block append scriptsJS
+    script(src="js/encontre.js")
+    script(src="js/profissionais.js")
 
 
 

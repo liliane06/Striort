@@ -1818,6 +1818,9 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
 }
+.fb-comments iframe {
+  width: 100% !important;
+}
 @media screen and (max-width: 576px) {
   .background-leort {
     background-size: 400px;
@@ -2003,6 +2006,34 @@ header {
     background-color: #107e6a;
   }
 }
+.encontre .encontre-title {
+  font-size: 60px;
+  padding-top: 140px;
+}
+.encontre #norte,
+.encontre #nordeste,
+.encontre #CentroOeste,
+.encontre #sul,
+.encontre #sudeste {
+  cursor: pointer;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  transition: 1s;
+}
+.encontre #norte:hover,
+.encontre #nordeste:hover,
+.encontre #CentroOeste:hover,
+.encontre #sul:hover,
+.encontre #sudeste:hover {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+}
+@media screen and (max-width: 768px) {
+  .encontre .encontre-title {
+    font-size: 40px;
+    padding-top: 40px;
+  }
+}
 .ir-topo {
   width: 50px;
   height: 50px;
@@ -2163,8 +2194,8 @@ footer .logo-footer {
 .display-menu li {
   list-style: none;
   text-transform: uppercase;
-  margin-right: 25px;
-  font-size: 14px;
+  margin-right: 20px;
+  font-size: 13px;
   letter-spacing: -0.4px;
 }
 .display-menu li:last-child {

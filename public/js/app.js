@@ -236,6 +236,7 @@
     })
 
     $('.fechar-agenda').on('click', function(){
+        console.log( $('#agemdaPop'));
         $('#agemdaPop').fadeOut(200);
     });
 

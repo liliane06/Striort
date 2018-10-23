@@ -65,21 +65,27 @@
     function fn_carregar_revendedores(){
         var index = parseInt( $(this).data('index') );
         var conteudoLi = '';
+        var conteudoLi2 = "";
 
         let esteticistas = estadoSelecionado.cidades[index];
 
-        $.each(esteticistas.revendedor,function(v_Index,v_Object){
-            conteudoLi += '<li> <strong>' + v_Object.nome + ' </strong>:' + v_Object.tel + '</li>';
+        $.each(esteticistas.esteticista, function(v_Index,v_Object){
+            conteudoLi += '<li><strong class="text-verde-texto">' + v_Object.nome + ' </strong> <br>' + v_Object.tel + '<br>' + v_Object.endereco + '</li>';
+            $.each(v_Object.redesSociais, function(index, redeSocial){
+                conteudoLi += "<a href='" + redeSocial["faceboock"] + "'><img src='../img/icon-face.png' alt=''></a>"
+                conteudoLi += "<a href='" + redeSocial["instagram"] + "'><img src='../img/icon-insta.png' alt=''></a>"             
+            })
         });
 
-        var html = '<li class="cidade" >' +
-           '<h4>' + esteticistas.loja + '</h4>' +
-           '<a href="'+ esteticistas.link +'" target="_blanck">Credenciar</a>' +
-            '<ul style="padding:0">' + conteudoLi + '</ul>'
+
+
+        var html = '<li class="cidade display-encontre" >' +
+            '<img class="img-responsive img-esteticista-encontre" src="../img/nayara-andrade.png">' +
+            '<ul style="padding:0" class="informacoes-encontre">' + conteudoLi + conteudoLi2 + '</ul>'
         '</li>';
 
 
-        $('#revendores').html(
+        $('#esteticistas').html(
             html
         )
         fn_trocarTela(3);

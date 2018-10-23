@@ -18,8 +18,13 @@
     padding-left: 0
     border: 1px solid #009c80;
     cursor pointer
+    li
+        padding: 10px
     li:nth-child(odd)
         background-color: #009c80
+        color: #fff
+    li:nth-child(even)
+        background-color: #00b594
         color: #fff
 
 #cidades
@@ -27,9 +32,40 @@
     padding-left: 0
     border: 1px solid #009c80;
     cursor pointer
+    li
+        padding: 10px
     li:nth-child(odd)
         background-color: #009c80
         color: #fff
+    li:nth-child(even)
+        background-color: #00b594
+        color: #fff
+
+#esteticistas
+    list-style: none;
+    padding: 0;
+    border: 1px solid #009c80;
+    padding: 20px;
+    ul
+        list-style: none;
+    li
+        margin-bottom: 10px;
+
+.img-esteticista-encontre
+    max-width: 150px;
+    width: 150px;
+    height: 150px;
+
+.display-encontre
+    display: flex
+
+.informacoes-encontre
+    text-align: left 
+    margin-left: 15px
+    margin-top: 15px;
+    a
+        padding: 10px 5px
+
 
 @media screen and (max-width: $queries['medium'])
     .encontre

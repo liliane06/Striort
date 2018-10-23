@@ -6,17 +6,17 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 }
@@ -28,17 +28,17 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Rio Branco',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 },
                 {
                     cidade:'Xapuri',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 }
@@ -52,41 +52,41 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 }
             ]
         }
     ],
-    centroOeste:[
+    CentroOeste:[
         {
             nome: "Amazonas",
             sigla: "AM",
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{facebook:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 }
@@ -100,17 +100,17 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 }
@@ -124,17 +124,17 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticistas:[{nome:'bla', 
+                    esteticista:[{nome:'bla', 
                                 tel:'1111-1111', 
-                                redesSociais:[{facebock:'bla.bla', instagram:'bla.com'}], 
+                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
                                 endereco:'alamenda mamore'}
                     ]
                 }

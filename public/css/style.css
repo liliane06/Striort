@@ -2034,8 +2034,15 @@ header {
   border: 1px solid #009c80;
   cursor: pointer;
 }
+#estados li {
+  padding: 10px;
+}
 #estados li:nth-child(odd) {
   background-color: #009c80;
+  color: #fff;
+}
+#estados li:nth-child(even) {
+  background-color: #00b594;
   color: #fff;
 }
 #cidades {
@@ -2044,9 +2051,46 @@ header {
   border: 1px solid #009c80;
   cursor: pointer;
 }
+#cidades li {
+  padding: 10px;
+}
 #cidades li:nth-child(odd) {
   background-color: #009c80;
   color: #fff;
+}
+#cidades li:nth-child(even) {
+  background-color: #00b594;
+  color: #fff;
+}
+#esteticistas {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #009c80;
+  padding: 20px;
+}
+#esteticistas ul {
+  list-style: none;
+}
+#esteticistas li {
+  margin-bottom: 10px;
+}
+.img-esteticista-encontre {
+  max-width: 150px;
+  width: 150px;
+  height: 150px;
+}
+.display-encontre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.informacoes-encontre {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.informacoes-encontre a {
+  padding: 10px 5px;
 }
 @media screen and (max-width: 768px) {
   .encontre .encontre-title {

@@ -220,7 +220,6 @@
         }
     }
 
-
     $('.fechar-menu').on('click', function(){
         $('#menu-mob-flutuante').fadeOut(200);
     });

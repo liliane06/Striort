@@ -2066,6 +2066,8 @@ header {
   list-style: none;
   padding: 0;
   border: 1px solid #009c80;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px #ccc;
   padding: 20px;
 }
 #esteticistas ul {
@@ -2087,7 +2089,7 @@ header {
 .informacoes-encontre {
   text-align: left;
   margin-left: 15px;
-  margin-top: 15px;
+  margin-top: 0;
 }
 .informacoes-encontre a {
   padding: 10px 5px;

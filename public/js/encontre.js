@@ -70,10 +70,10 @@
         let esteticistas = estadoSelecionado.cidades[index];
 
         $.each(esteticistas.esteticista, function(v_Index,v_Object){
-            conteudoLi += '<li><strong class="text-verde-texto">' + v_Object.nome + ' </strong> <br>' + v_Object.tel + '<br>' + v_Object.endereco + '</li>';
+            conteudoLi += '<li><h4 class="text-verde-texto">' + v_Object.nome + ' </h4> <p style="margin-bottom: 5px;"> <strong>Tel: </strong>' + v_Object.tel + '</p>' + v_Object.endereco + '</li>';
             $.each(v_Object.redesSociais, function(index, redeSocial){
-                conteudoLi += "<a href='" + redeSocial["faceboock"] + "'><img src='../img/icon-face.png' alt=''></a>"
-                conteudoLi += "<a href='" + redeSocial["instagram"] + "'><img src='../img/icon-insta.png' alt=''></a>"             
+                conteudoLi += "<a href='" + redeSocial["faceboock"] + "'><img src='../img/icon-face.png' target='_blank' alt='Logo Facebook'></a>"
+                conteudoLi += "<a href='" + redeSocial["instagram"] + "'><img src='../img/icon-insta.png'target='_blank' alt='Logo Instagram'></a>"             
             })
         });
 
@@ -140,4 +140,4 @@
     $('#estados').on("click", ".estado", fn_carregar_cidades);
     $('#cidades').on("click", ".cidade", fn_carregar_revendedores);
     $('.voltarTela').on('click', fn_voltar)
-})($)
+})(jQuery)

@@ -6,18 +6,19 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[{nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[
+                        {nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 }
             ]
@@ -28,18 +29,18 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Rio Branco',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[{nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 },
                 {
                     cidade:'Xapuri',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[{nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 }
             ]
@@ -52,18 +53,18 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[{nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[{nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 }
             ]
@@ -76,18 +77,18 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{facebook:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[{nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{facebook:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[{nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 }
             ]
@@ -100,18 +101,26 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[{nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[
+                            {nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'
+                            },
+                            {nome:'Nayara Andrade2', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'
+                            },
+
                     ]
                 }
             ]
@@ -124,18 +133,23 @@ const profissionais= {
             cidades:[                    
                 {
                     cidade:'Manaus',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[{nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 },
                 {
                     cidade:'Amapa',
-                    esteticista:[{nome:'bla', 
-                                tel:'1111-1111', 
-                                redesSociais:[{faceboock:'bla.bla', instagram:'bla.com'}], 
-                                endereco:'alamenda mamore'}
+                    esteticista:[
+                        {nome:'Nayara Andrade', 
+                                tel:'(11)- 4534 - 4565', 
+                                redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                                endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'},
+                        {nome:'Nayara Andrade', 
+                        tel:'(11)- 4534 - 4565', 
+                        redesSociais:[{faceboock:'https://www.facebook.com/Bothanicamineral/', instagram:'https://www.instagram.com/bothanicamineral/'}], 
+                        endereco:'Rua: Alameda Marmoré 503 - Alphaville | Barueri - SP'}
                     ]
                 }
             ]

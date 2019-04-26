@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "express": "^4.15.2",
+    "native": "^0.3.3",
     "stylus": "^0.54.5"
   },
   "devDependencies": {

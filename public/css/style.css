@@ -1260,6 +1260,18 @@ header {
   line-height: 1rem;
   font-size: 1.2rem;
 }
+.agenda a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.agenda a:active {
+  color: #fff;
+  text-decoration: underline;
+}
+.agenda a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
 .blog-img-prod {
   margin-top: 8px;
 }

@@ -1275,6 +1275,9 @@ header {
 .blog-img-prod {
   margin-top: 8px;
 }
+.infos a:hover {
+  color: #fff;
+}
 .icon-acoes {
   max-width: 50px;
   margin-right: 10px;

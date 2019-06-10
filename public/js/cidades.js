@@ -36,14 +36,14 @@
                             '<p class="data" style="max-width: 200px; display: block; margin: auto; text-overflow: ellipsis; white-space: nowrap; overflow-x: hidden;" >' + el.dataInicial  + '</p>' +
                             '<p class="cidade">' + el.nomeLocalidade + '</p>' +
                             '<p style="font-size:14px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">' + el.nomeTurma + '</p>' +
-                            '<a style="color:white" href="https://forms.gle/aUVQ4AUe18ehax5MA" target="_blanck">Cadastro Inicial</a>' +
+                            '<a style="color:white" href="https://materiais.bothanicamineral.com.br/striort" target="_blanck">Cadastro Inicial</a>' +
                         '</div>'                  
                         )
                         $(agendaBottom).slick('slickAdd',                
                         '<div class="agenda-item abrirAgenda text-center">' +
                             '<p class="data"  style="max-width: 200px; display: block; margin: auto; text-overflow: ellipsis; white-space: nowrap; overflow-x: hidden;" >' + el.dataInicial  + '</p>' +
                             '<p class="cidade">' + el.nomeLocalidade + '</p>' +
-                            '<a style="color:white" href="https://forms.gle/aUVQ4AUe18ehax5MA" target="_blanck">Cadastro Inicial</a>' +
+                            '<a style="color:white" href="https://materiais.bothanicamineral.com.br/striort" target="_blanck">Cadastro Inicial</a>' +
                         '</div>'                  
                         );
                     })                 

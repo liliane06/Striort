@@ -2,7 +2,7 @@
     // solicitação 
     // recebe os dados
     function pegarDatas(idProduto){
-        var url = 'https://wsbm.happybiz.com.br/listarCursos?empresa=001&filial=0003&idProduto=' + idProduto;
+        var url = 'https://wsbm.happybiz.com.br/bothanica/listarCursos?empresa=001&filial=0003&idProduto=' + idProduto;
             $("#spinner").toggle();
             $(".fundo-spinner").toggle();
             axios.get(url)
